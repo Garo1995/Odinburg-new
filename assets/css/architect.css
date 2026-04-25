@@ -1,0 +1,271 @@
+.architecture-page{
+    margin-top: 40px;
+    padding-bottom: 150px;
+}
+
+.architecture-title{
+    gap: 16px;
+}
+.back-home{
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    transition: 0.3s;
+
+}
+.back-home i{
+    filter: invert(1);
+    transition: 0.3s;
+}
+
+.architecture-min{
+    margin-top: 32px;
+    gap: 16px;
+    width: 100%;
+}
+.architecture-rel{
+    position: relative;
+    width: 49%;
+}
+
+.architecture-swiper{
+    width: 100%;
+}
+.architecture-photo{
+    position: relative;
+    display: flex;
+}
+.architecture-photo img{
+    border-radius: 32px;
+    width: 100%;
+    height: 580px;
+    object-fit: cover;
+}
+
+.archit-names{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FEFFFA;
+    border: 1px solid #0000001A;
+    width: max-content;
+    gap: 10px;
+    border-radius: 44px;
+    padding: 8px 24px;
+    z-index: 2;
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+}
+
+
+.architecture-rel .swiper-button-next, .architecture-rel .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    transition: 0.3s;
+    background: #FFFFFF40;
+    backdrop-filter: blur(45px);
+}
+.architecture-rel .swiper-button-prev{
+    left: 16px;
+    right: auto;
+}
+.architecture-rel .swiper-button-next{
+    right: 16px;
+    left: auto;
+}
+.architecture-rel .swiper{
+    border-radius: 32px;
+
+}
+
+.architecture-box{
+    gap: 20px;
+    margin-top: 40px;
+    background: #EFEFEF;
+    border-radius: 51px;
+    padding: 4px;
+}
+.architecture-box .parking-href {
+    margin-top: 0;
+    background: unset;
+    padding: 0;
+}
+
+
+.back-gallery{
+    width: 185px;
+    height: 46px;
+    border-radius: 44px;
+    gap: 4px;
+    padding: 10px 16px;
+    background: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+.error-pages{
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+.error-pages-info .btn{
+    margin-top: 32px;
+    width: max-content;
+}
+.error-pages-info h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 110%;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+.error-pages-pic{
+    margin-bottom: 40px;
+}
+
+
+
+
+.favorite-pages{
+    margin-top: 55px;
+    padding-bottom: 60px;
+}
+.favorite-pages-info{
+    gap: 20px;
+    margin-top: 150px;
+}
+.favorite-pages-info img{
+    width: 130px;
+}
+.favorite-pages-info h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 110%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 17px;
+}
+
+.favorite-back-home{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 110%;
+    color: rgba(0, 0, 0, 1);
+    width: max-content;
+
+}
+.favorite-back-home i {
+    filter: invert(1);
+    transition: 0.3s;
+}
+.favorite-back-home span{
+    display: block;
+    margin-top: 2px;
+}
+
+@media (max-width: 1020px){
+    .architecture-min {
+        flex-direction: column;
+        margin-top: 24px;
+
+    }
+    .architecture-rel {
+        position: relative;
+        width: 100%;
+    }
+    .architecture-page {
+        margin-top: 24px;
+        padding-bottom: 50px;
+    }
+    .architecture-photo img {
+        height: 412px;
+        object-fit: cover;
+    }
+    .architecture-box {
+        margin-top: 22px;
+    }
+    .parking-href-min {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 575px){
+    .architecture-box {
+        gap: 24px;
+        margin-top: 22px;
+        border-radius: 24px;
+        padding: 0;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        background: unset;
+    }
+    .archit-names {
+        top: 18px;
+        right: 18px;
+        padding: 7px 19px;
+        font-size: 16px;
+    }
+    .architecture-box .parking-href {
+        padding: 4px;
+        background: #EFEFEF;
+    }
+    .back-gallery {
+        width: 175px;
+        height: 40px;
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    .error-pages-info h4 {
+        font-size: 22px;
+    }
+    .error-pages-info .btn {
+        margin-top: 22px;
+    }
+    .error-pages{
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+    .favorite-pages-info h4 {
+        font-size: 20px;
+        margin-bottom: 7px;
+    }
+    .favorite-pages-info {
+        gap: 20px;
+        margin-top: 80px;
+    }
+    .favorite-pages {
+        margin-top: 38px;
+        padding-bottom: 40px;
+    }
+}

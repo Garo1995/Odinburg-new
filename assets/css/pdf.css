@@ -1,0 +1,225 @@
+.pdf-file-sec{
+    width: 100%;
+    padding: 80px 0;
+    background: rgba(160, 160, 160, 1);
+
+}
+
+.pdf-file-min{
+    max-width: 842px;
+    width: 100%;
+    margin: 60px auto 0;
+    background: #FFFFFF;
+}
+.pdf-file-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: rgba(190, 220, 28, 1);
+    border-bottom: 1px solid rgba(233, 233, 233, 1);
+    padding: 14px 40px;
+}
+.pdf-logo{
+    width: 106px;
+}
+.pdf-sales-office{
+    gap: 24px;
+}
+.pdf-office-text{
+    gap: 4px;
+}
+.pdf-office-text p, .pdf-office-text span{
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 100%;
+    color: rgba(0, 0, 0, 0.5);
+}
+.pdf-office-text span{
+    color: rgba(0, 0, 0, 1);
+}
+
+
+.pdf-file-foot{
+    padding: 15px 40px 13px;
+    gap: 10px;
+    border-top: 1px solid rgba(233, 233, 233, 1);
+}
+.pdf-file-foot p{
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 100%;
+    color: rgba(111, 111, 111, 0.93);
+}
+.pdf-file-foot p a{
+    text-decoration: underline;
+    color: rgba(111, 111, 111, 0.93);
+
+}
+
+
+
+
+.kitchen-living-flex{
+    width: 100%;
+}
+.kitchen-living-info{
+    max-width: 490px;
+    width: 100%;
+    padding: 32px 24px 40px 40px;
+    border-right: 1px solid rgba(233, 233, 233, 1);
+}
+.kitchen-living-title{
+    gap: 20px;
+}
+.kitchen-living-title h3{
+    max-width: 262px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 147%;
+    color: rgba(0, 0, 0, 1);
+}
+.kitchen-living-title img{
+    width: 70px;
+    height: 66px;
+}
+
+.kitchen-living-home{
+    padding: 61px 20px 20px 29px;
+}
+.kitchen-living-home img{
+    max-width: 291px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.kitchen-living-cnt{
+    max-width: 352px;
+    width: 100%;
+    padding: 40px 40px 20px 40px;
+}
+
+.kitchen-living-price p{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 120%;
+    color: rgba(111, 111, 111, 0.93);
+}
+.kitchen-living-price del{
+    display: block;
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 120%;
+    color: rgba(111, 111, 111, 0.93);
+}
+.kitchen-living-price strong{
+    margin-top: 10px;
+    display: flex;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.kitchen-living-ipot{
+    margin-top: 18px;
+    background: rgba(243, 243, 243, 1);
+    width: 195px;
+    height: 24px;
+    border-radius: 24px;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+}
+.kitchen-living-ipot span{
+    color: rgba(0, 0, 0, 0.93);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+}
+
+
+.qarakusi-kit{
+    margin-top: 28px;
+}
+.qarakusi-kit strong{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: rgba(0, 0, 0, 1);
+}
+.qarakusi-kit ul{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.qarakusi-kit ul li{
+    border-bottom: 1px solid rgba(233, 233, 233, 1);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+.qarakusi-kit ul li p{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.93);
+}
+.location-house-flex{
+    margin-top: 18px;
+    gap: 10px;
+}
+.location-house-pic{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.location-house-pic span{
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 140%;
+    color: rgba(0, 0, 0, 1);
+}
+
+
+.house-general{
+    padding: 32px 40px 56px;
+
+}
+.house-general h4{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: rgba(0, 0, 0, 1);
+}
+
+.house-general-pic{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.for-notes{
+    gap: 30px;
+    margin-top: 11px;
+}
+.for-notes-pic{
+    max-width: 291px;
+    width: 100%;
+}
+.for-notes-ul{
+    max-width: 381px;
+    width: 100%;
+}
+.for-notes-ul ul li{
+   border-bottom: 1px solid rgba(233, 233, 233, 1);
+    height: 32px;
+    width: 100%;
+}

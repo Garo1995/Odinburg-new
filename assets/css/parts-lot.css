@@ -1,0 +1,415 @@
+.parts-lot{
+    padding-top: 40px;
+}
+
+
+.bread-caps ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.bread-caps ul li{
+    position: relative;
+}
+.bread-caps ul li + li:before{
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    left: -12px;
+    top: 5px;
+}
+.bread-caps ul li, .bread-caps a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: rgba(0, 0, 0, 0.5);
+}
+.parts-title{
+    margin-top: 40px;
+}
+
+.parts-apart-flex{
+    display: flex;
+    margin-top: 24px;
+    gap: 24px;
+    justify-content: space-between;
+}
+.floor-plan-pic{
+    display: flex;
+    justify-content: center;
+}
+.parts-apart-box{
+    max-width: 840px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 24px;
+    padding-bottom: 48px;
+}
+.parts-apart-count{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 24px;
+
+}
+.parts-apart-alig span{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 1);
+}
+.parts-apart-alig small{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 0.5);
+    display: block;
+    margin-top: 4px;
+}
+.parts-apart-alig{
+    gap: 32px;
+}
+.parts-apart-pdf{
+    gap: 8px;
+}
+.parts-apart-pdf a{
+    background: rgba(239, 239, 239, 1);
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    border-radius: 31px;
+    transition: 0.3s;
+}
+.layout-floor-pic{
+    width: 100%;
+    padding: 39px 24px 1px;
+    position: relative;
+}
+.with-keys{
+    background: rgba(190, 220, 28, 1);
+    width: max-content;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 16px;
+    gap: 4px;
+    border-radius: 34px;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+
+}
+.with-koxm{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    width: 70px;
+}
+.with-keys span{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 1);
+}
+
+
+.layout-floor{
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+.layout-floor ul{
+    background: rgba(239, 239, 239, 1);
+    border-radius: 51px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+.layout-floor ul li{
+    width: max-content;
+    white-space: nowrap;
+    padding: 12px 24px;
+    border-radius: 44px;
+    border: 1px solid transparent;
+    transition: 0.3s;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: rgba(0, 0, 0, 1);
+    cursor: pointer;
+
+}
+.layout-floor ul li.layout-floor-act{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(254, 255, 250, 1);
+
+}
+.layout-pic-js{
+    display: none;
+}
+body .active-cat{
+    display: block;
+}
+.layout-pic{
+    display: flex;
+    justify-content: center;
+}
+
+.parts-apart-cnt{
+    background: rgba(239, 239, 239, 1);
+    max-width: 660px;
+    width: 100%;
+    border-radius: 24px;
+    padding: 48px 32px 32px;
+}
+.similar-apartments{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+.parts-apart-price{
+    gap: 12px;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+}
+.parts-apart-res{
+    gap: 16px;
+}
+.parts-apart-price del {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.5);
+}
+.parts-apart-res span{
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    width: max-content;
+    padding: 8px 16px;
+    border-radius: 24px;
+    background: rgba(190, 220, 28, 1);
+
+}
+.parts-apart-price strong{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+}
+
+.parts-apart-del{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.parts-apart-del del{
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+}
+/*.parts-apart-del span{*/
+/*    font-weight: 700;*/
+/*    font-size: 18px;*/
+/*    line-height: 26px;*/
+/*    text-align: right;*/
+/*    color: rgba(0, 0, 0, 1);*/
+/*}*/
+.parts-frame{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.parts-frame-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 12px;
+    width: 100%;
+    gap: 16px;
+}
+.parts-frame-count{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.parts-frame-count p{
+    color: rgba(0, 0, 0, 0.5);
+}
+.parts-frame-count span{
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: right;
+}
+.parts-frame-btn{
+    margin-top: 92px;
+}
+.parts-mortgage{
+    gap: 8px;
+}
+.parts-mortgage img{
+    width: 60px;
+}
+.parts-mortgage span{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    color: rgba(0, 0, 0, 1);
+}
+.parts-mortgage i{
+    filter: invert(1);
+
+}
+.parts-frame-btn .btn{
+    margin-top: 16px;
+    width: 100%;
+}
+.parts-frame-btn .btn-line{
+    margin-top: 16px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1199px){
+    .parts-apart-cnt {
+        max-width: 460px;
+        padding: 32px 20px 32px;
+    }
+    .layout-floor {
+        margin-top: 30px;
+    }
+    .parts-apart-box {
+        padding-bottom: 30px;
+    }
+    .parts-frame-btn {
+        margin-top: 50px;
+    }
+}
+@media (max-width: 1020px){
+    .parts-lot {
+        padding-top: 30px;
+    }
+    .parts-frame {
+        margin-top: 30px;
+    }
+    .parts-apart-flex {
+        flex-direction: column;
+    }
+    .parts-title {
+        margin-top: 30px;
+    }
+    .parts-apart-cnt {
+        max-width: 100%;
+        padding: 32px 30px 32px;
+    }
+
+}
+
+@media (max-width: 767px){
+    .parts-apart-count {
+        padding: 16px;
+    }
+    .parts-apart-alig span {
+        font-size: 20px;
+    }
+    .layout-floor {
+        overflow-x: scroll;
+        justify-content: flex-start;
+        padding: 0 5px;
+        position: relative;
+    }
+    .layout-floor::-webkit-scrollbar {
+        display: none;
+
+    }
+    .layout-floor::-webkit-scrollbar-thumb {
+        display: none;
+    }
+
+}
+@media (max-width: 575px){
+    .parts-apart-cnt {
+        padding: 24px 20px 24px;
+    }
+    .parts-apart-price strong {
+        font-size: 24px;
+    }
+    .parts-apart-del span {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .layout-floor-pic {
+        padding: 33px 16px 1px;
+    }
+    .with-keys span {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .with-keys {
+        top: 14px;
+        left: 14px;
+    }
+    .layout-floor ul li {
+        padding: 10px 19px;
+        font-size: 16px;
+    }
+    .parts-apart-price del {
+        font-size: 16px;
+    }
+    .parts-apart-res span {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+    .parts-frame-count span {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .parts-mortgage span {
+        font-size: 16px;
+    }
+    .parts-frame-btn {
+        margin-top: 35px;
+    }
+    .parts-frame-info {
+        padding-bottom: 8px;
+        gap: 12px;
+    }
+    .parts-frame-count p {
+        font-size: 15px;
+    }
+    .parts-apart-pdf a {
+        width: 42px;
+        height: 42px;
+        padding: 7px;
+    }
+    .with-koxm {
+        top: 16px;
+        right: 16px;
+        width: 63px;
+    }
+}

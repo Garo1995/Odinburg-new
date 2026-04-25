@@ -1,0 +1,895 @@
+header{
+    position: relative;
+    margin-top: 48px;
+    z-index: 91;
+}
+
+.header-main{
+    background: rgba(244, 241, 236, 1);
+    border-radius: 24px;
+    padding: 16px 32px;
+    transform: translateY(-50px);
+    transition: 0.7s;
+    opacity: 0;
+}
+.header-anime .header-main{
+    transform: translateY(0);
+    transition: 0.7s;
+    opacity: 1;
+}
+.header-logo{
+    gap: 16px;
+}
+
+.logo span{
+    color: rgba(11, 58, 42, 1);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+}
+.open-menu{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+.open-menu span{
+    transition: 0.3s;
+    width: 16px;
+    display: block;
+    height: 2px;
+    background: rgba(11, 58, 42, 1);
+    border-radius: 10px;
+}
+
+.header-cont-flex{
+    gap: 16px;
+}
+.phone-number{
+    color: rgba(11, 58, 42, 1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+}
+.request-call{
+    color: rgba(11, 58, 42, 1);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.request-call:hover{
+    color: rgba(11, 58, 42, 1);
+}
+.favorite-box{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(244, 241, 236, 1);
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1.5px solid rgba(11, 58, 42, 1);
+}
+.favorite-box:hover{
+    background: rgba(11, 58, 42, 1);
+
+}
+.favorite-box i{
+    background-color: rgba(11, 58, 42, 1);
+    width: 20px;
+    height: 20px;
+}
+.favorite-box:hover i{
+    background-color: rgba(255, 255, 255, 1);
+
+}
+.threed-tur{
+    color: rgba(11, 58, 42, 1);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 50px;
+    border: 1px solid rgba(11, 58, 42, 1);
+    background: rgba(244, 241, 236, 1);
+    padding: 15px 24px;
+}
+.threed-tur:hover{
+    background: rgba(11, 58, 42, 1);
+    color: rgba(244, 241, 236, 1);
+}
+
+.select-property{
+    position: relative;
+}
+.select-block{
+    gap: 16px;
+}
+
+.select-name{
+    background: rgba(11, 58, 42, 1);
+    min-width: 234px;
+    height: 52px;
+    gap: 4px;
+    border-radius: 32px;
+    padding: 16px 16px 16px 24px;
+    color: rgba(244, 241, 236, 1);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+
+}
+.select-name:hover{
+
+}
+.select-name:after{
+    content: '';
+    position: absolute;
+    top: 21px;
+    right: 21px;
+    width: 6.5px;
+    height: 6.5px;
+    border-top: 2px solid rgba(244, 241, 236, 1);
+    border-right: 2px solid rgba(244, 241, 236, 1);
+    transform: rotate(45deg);
+}
+.select-name i{
+    display: none;
+}
+
+.select-dropdown{
+    background: rgba(244, 241, 236, 1);
+    border: 1px solid #EFEFEF;
+    box-shadow: 0px 4px 10px 0px #0000000D;
+    width: 266px;
+    position: absolute;
+    top: 58px;
+    right: 0;
+    overflow: hidden;
+    height: 0;
+    transition: 0.3s;
+    border-radius: 12px;
+    z-index: 111;
+    visibility: hidden;
+}
+.select-property-open .select-dropdown{
+    height: 150px;
+    visibility: visible;
+}
+.select-dropdown ul{
+    padding: 6px;
+}
+.select-dropdown ul li {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: rgba(43, 43, 43, 1);
+    text-align: left;
+    padding: 7px 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select-dropdown ul li:hover{
+    background: rgba(11, 58, 42, 0.2);
+
+}
+.select-dropdown ul li i{
+    transition: 0.3s;
+    opacity: 0.3;
+    width: 20px;
+}
+.select-dropdown ul li:hover i{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+.menu-modal{
+    width: 100%;
+    position: absolute;
+    z-index: 211;
+    top: 97px;
+    left: 0;
+    opacity: 0;
+    transition: 0.4s;
+    visibility: hidden;
+    transform: translateY(-10px);
+}
+.menu-modal-opened{
+    opacity: 1;
+    transition: 0.4s;
+    visibility: visible;
+    transform: translateY(0);
+
+}
+.menu-modal-fon{
+    border: 1px solid rgba(203, 184, 169, 0.4);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+
+    width: 100%;
+    border-radius: 24px;
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    height: 668px;
+}
+
+.menu-modal-min {
+    max-width: 866px;
+    width: 100%;
+}
+
+.menu-modal-cnt{
+    max-width: 318px;
+    width: 100%;
+}
+
+.menu-data-menu ul li{
+    cursor: pointer;
+    padding: 12px 10px 12px 12px;
+    color: rgba(11, 58, 42, 1);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    transition: 0.3s;
+    border-radius: 12px;
+}
+
+.menu-data-menu ul li:hover{
+    background: rgba(11, 58, 42, 0.1);
+    color: rgba(11, 58, 42, 1);
+
+}
+
+.menu-data-link ul li a{
+    padding: 8px 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(11, 58, 42, 1);
+    transition: 0.3s;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+}
+.menu-data-link ul li a:hover{
+    color: rgba(11, 58, 42, 1);
+}
+.btn-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 150px;
+    width: 100%;
+    margin-top: 16px;
+    border: 1.5px solid rgba(11, 58, 42, 1);
+    padding: 11px 24px;
+    background: rgba(244, 241, 236, 1);
+
+    color: rgba(11, 58, 42, 1);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+    vertical-align: middle;
+    gap: 10px;
+    transition: 0.3s;
+}
+/*.btn-line:hover{*/
+/*}*/
+.btn-line:hover i{
+    background-color: rgba(244, 241, 236, 1);
+
+}
+.menu-modal-cnt .btn{
+    display: none;
+}
+.project-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    gap: 16px;
+
+}
+.project-box{
+    display: flex;
+    width: calc(33.333333% - 12px);
+    border-radius: 24px;
+    position: relative;
+}
+.menu-modal-block h2{
+    font-size: 22px;
+    line-height: 24px;
+}
+.project-box img {
+    width: 100%;
+    border-radius: 24px;
+    height: 100%;
+}
+.project-wrap .project-box img{
+    height: 270px;
+}
+.project-name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0 0 24px 24px;
+    background:rgba(244, 241, 236, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 16px 24px;
+
+}
+.project-name span{
+    color: rgba(244, 241, 236, 1);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.menu-property-col{
+    width: calc(33.333333% - 12px);
+    gap: 16px;
+}
+.select-menu-property{
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+}
+.menu-property-col .project-box{
+    width: 100%;
+}
+
+.mortgage-flex{
+    margin-top: 12px;
+    gap: 16px;
+    display: flex;
+}
+
+.mortgage-selec{
+    gap: 16px 16px;
+    max-width: 556px;
+    width: 100%;
+}
+.mortgage-box{
+    width: calc(50% - 8px);
+    background: rgba(244, 241, 236, 1);
+    height: 272px;
+    border-radius: 24px;
+    padding: 16px;
+}
+.mortgage-box img{
+    width: 86px;
+}
+
+.mortgage-box p{
+    margin-top: 16px;
+
+}
+.mortgage-calc-menu-title {
+    padding: 16px 16px 0;
+}
+.mortgage-calc-menu-title h3{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.mortgage-box h3, .mortgage-box strong{
+    margin-top: 14px;
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(43, 43, 43, 1);
+}
+header .mortgage-box p {
+    height: 98px;
+}
+
+.mortgage-calculator{
+    background: rgba(11, 58, 42, 1);
+    max-width: 294px;
+    width: 100%;
+    border-radius: 24px;
+    padding: 16px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mortgage-calc-pirce{
+    margin-top: 16px;
+}
+.mortgage-calc-pirce span{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+}
+.mortgage-calc-pirce p{
+    color: rgba(244, 241, 236, 0.4);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 4px;
+}
+
+.menu-modal-stock{
+    gap: 16px;
+    margin-top: 12px;
+}
+.menu-modal-stock .timer-wrapper{
+    width: calc(50% - 12px);
+}
+.menu-modal-stock .family-mortgage-box{
+    width: calc(50% - 12px);
+
+}
+
+.bg-green{
+    background: rgba(11, 58, 42, 1);
+}
+.bg-green h4{
+    color: rgba(244, 241, 236, 1);
+}
+.bg-green p{
+    color: rgba(244, 241, 236, 1);
+}
+
+
+.header-nav{
+    position: fixed;
+    bottom: 24px;
+    left: 0;
+    width: 100%;
+    z-index: 991;
+    justify-content: center;
+    display: flex;
+    transition: all 0.3s ease;
+    visibility: hidden;
+    transform: translateY(100px);
+
+    display: none;
+}
+.header-nav.show {
+    visibility: visible;
+    transform: translateY(0);
+    transition: all 0.4s ease;
+
+}
+
+.nav-menu{
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    border: 1px solid #FFFFFF1A;
+    width: max-content;
+    border-radius: 48px;
+    padding: 4px;
+
+}
+
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.nav-menu a{
+    transition: 0.3s;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 44px;
+    padding: 6px 12px;
+    color: rgba(244, 241, 236, 1);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+}
+.nav-menu a:hover{
+    background: rgba(11, 58, 42, 1);
+    color: rgba(244, 241, 236, 1);
+}
+.nav-menu .nav-menu-active a:hover{
+    background: rgba(11, 58, 42, 1);
+    color: rgba(244, 241, 236, 1);
+}
+
+
+.menu-data-mobile{
+    display: none;
+}
+
+
+.menu-modal-js{
+    display: none;
+}
+.menu-modal-js.active{
+    display: block;
+}
+
+
+.close-menu span {
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: relative;
+}
+
+.close-menu span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 2px;
+    position: relative;
+}
+.close-menu span:nth-child(2) {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: -3px;
+}
+
+.close-menu span:nth-child(3){
+    display: none;
+}
+
+
+.select-property-mobile{
+    display: none;
+}
+
+@media (max-width: 1499px){
+    header {
+        margin-top: 40px;
+    }
+}
+@media (max-width: 1360px){
+    .menu-modal-fon {
+        padding: 24px;
+        gap: 20px;
+        height: 640px;
+    }
+    .menu-data-menu ul li {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .menu-modal-cnt {
+        max-width: 280px;
+    }
+    .mortgage-calc-menu-title {
+        padding: 0;
+    }
+    .menu-data-link ul li a {
+        padding: 7px 16px;
+    }
+
+
+
+}
+
+@media (max-width: 1299px){
+    .favorite-box {
+        width: 48px;
+        height: 48px;
+    }
+    .threed-tur {
+        padding: 13px 20px;
+    }
+    .select-name {
+        height: 48px;
+        padding: 14px 16px 14px 22px;
+    }
+
+
+    .project-name span {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .stock-crash-box {
+        padding: 32px 22px;
+        height: 240px;
+    }
+    .stock-crash-box strong, .parking-space-price strong {
+        font-size: 32px;
+    }
+    .mortgage-calculator {
+        max-width: 311px;
+        padding: 25px 19px 20px;
+    }
+    .mortgage-box {
+        height: auto;
+    }
+
+    .header-main {
+        padding: 16px 24px;
+    }
+    .menu-modal {
+        top: 93px;
+    }
+}
+
+@media (max-width: 1199px){
+    .menu-modal-cnt {
+        max-width: 280px;
+    }
+    .menu-data-menu ul li {
+        padding: 8px 10px 8px 16px;
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .menu-data-link {
+        margin-top: 6px;
+    }
+    .menu-data-link ul li a {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .project-name {
+        border-radius: 0 0 16px 16px;
+    }
+    header .mortgage-box p {
+        height: 58px;
+    }
+    .btn-line {
+        margin-top: 12px;
+        padding: 9px 15px;
+        font-size: 15px;
+    }
+    .menu-modal-stock .family-mortgage-box {
+        height: 101px;
+    }
+    .project-name span {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .menu-modal-fon {
+        padding: 24px;
+        gap: 16px;
+        height: 568px;
+    }
+    .project-wrap .project-box img {
+        height: 230px;
+        border-radius: 18px;
+    }
+    .mortgage-calculator {
+        max-width: 234px;
+        padding: 20px 16px 20px;
+    }
+
+    .mortgage-calc-pirce {
+        margin-top: 20px;
+    }
+    .mortgage-calc-pirce span {
+        font-size: 20px;
+
+    }
+    .mortgage-calc-pirce {
+        margin-top: 16px;
+    }
+    .mortgage-flex {
+        margin-top: 16px;
+        gap: 12px;
+    }
+    .mortgage-selec {
+        gap: 12px 12px;
+    }
+    .mortgage-box {
+        padding: 16px;
+    }
+    .parking-space-price span {
+        font-size: 22px;
+    }
+    .stock-crash-box strong, .parking-space-price strong {
+        font-size: 24px;
+    }
+
+
+    .stock-crash-box span {
+        font-size: 22px;
+    }
+    .stock-crash-box .btn-line {
+        margin: 42px auto 0;
+    }
+
+    .parking-space-price span {
+        font-size: 20px;
+        margin-top: 12px;
+    }
+
+
+    .stock-crash-box {
+        padding: 20px 16px;
+        height: 195px;
+    }
+
+    .select-menu-property {
+        gap: 12px;
+        margin-top: 18px;
+    }
+    .menu-property-col {
+        gap: 12px;
+    }
+
+}
+
+@media (max-width: 1099px){
+    .header-cont-flex{
+        display: none;
+    }
+    .header-logo {
+        gap: 16px;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    header {
+        margin-top: 16px;
+    }
+    .menu-modal-min{
+        display: none;
+    }
+    .menu-modal {
+        top: 82px;
+    }
+    .menu-data-menu ul li {
+        padding: 16px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .menu-modal-cnt {
+        max-width: 320px;
+    }
+    .header-nav{
+        display: none;
+    }
+    .menu-data-mobile{
+        display: block;
+    }
+    .menu-data-menu{
+        display: none;
+    }
+    .menu-modal-cnt {
+        max-width: 100%;
+    }
+
+    .open-menu span {
+        width: 18px;
+    }
+    .menu-data-mobile ul li a {
+        padding: 10px;
+        width: 100%;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: rgba(11, 58, 42, 1);
+        transition: 0.36s;
+    }
+    .select-property-mobile{
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 24px 16px;
+        z-index: 91;
+    }
+    .select-dropdown {
+        background: #FEFFFA;
+        border: 1px solid #EFEFEF;
+        box-shadow: 0px 4px 10px 0px #0000000D;
+        width: 400px;
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        right: auto;
+        left: 50%;
+        display: block;
+        border-radius: 24px 24px 0 0;
+        padding: 4px 0 24px;
+        z-index: 111;
+        transform: translateY(130%) translateX(-50%);
+        transition: transform 0.3s ease;
+        height: auto;
+        visibility: visible;
+    }
+
+    .select-property-open .select-dropdown{
+        height: auto;
+
+        visibility: visible;
+    }
+    .touchstart-open{
+        transform: translateY(0%) translateX(-50%);
+    }
+    .select-property-open .select-dropdown {
+        transform: translateY(0%) translateX(-50%);
+    }
+    .select-property {
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 767px){
+    .body-fixed{
+        overflow: hidden;
+    }
+    .header-main {
+        z-index: 991;
+        position: relative;
+    }
+    .menu-modal {
+        top: -16px;
+        background: #EFEFEF;
+        padding-bottom: 54px;
+        overflow-y: scroll;
+        height: calc(100vh);
+
+    }
+    .menu-modal::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        background: unset;
+    }
+    .menu-modal::-webkit-scrollbar-thumb {
+        width: 0;
+        height: 0;
+        background: unset;
+    }
+    .menu-modal-fon {
+        padding: 0;
+        gap: 20px;
+        height: auto;
+        margin-top: 96px;
+        background: unset;
+        box-shadow: unset;
+        border: unset;
+    }
+    .menu-data-link ul li a {
+        padding: 8px 16px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .btn-line {
+        background: unset;
+    }
+    .menu-modal-cnt .btn{
+        width: 100%;
+        display: flex;
+        margin-top: 16px;
+    }
+    .sign-viewing span {
+        font-size: 16px;
+    }
+    .menu-data-mobile ul li a {
+        padding: 13px 16px;
+        line-height: 20px;
+    }
+}
