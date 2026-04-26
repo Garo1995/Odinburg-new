@@ -73,8 +73,15 @@ let mortgageSwiper = new Swiper(".mortgage-slider", {
 
         },
 
-        320: {
+        670: {
             slidesPerView: 2,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+
+        },
+
+        320: {
+            slidesPerView: 1,
             slidesPerGroup: 1,
             spaceBetween: 8,
 
@@ -115,13 +122,18 @@ let apartmentsSwiper = new Swiper(".apartments-slider", {
             spaceBetween: 16,
         },
 
-        767: {
-            slidesPerView: 2,
+        570: {
+            slidesPerView: 2.1,
+            slidesPerGroup: 1,
+            spaceBetween: 16,
+        },
+        480: {
+            slidesPerView: 1.5,
             slidesPerGroup: 1,
             spaceBetween: 16,
         },
         320: {
-            slidesPerView: 3,
+            slidesPerView: 1.1,
             slidesPerGroup: 1,
             spaceBetween: 10,
         },
@@ -155,13 +167,23 @@ let projectSwiper = new Swiper(".project-slider", {
             spaceBetween: 16,
 
         },
-        767: {
+        768: {
             slidesPerView: 2,
             slidesPerGroup: 1,
             spaceBetween: 16,
         },
+        570: {
+            slidesPerView: 2.1,
+            slidesPerGroup: 1,
+            spaceBetween: 16,
+        },
+        470: {
+            slidesPerView: 1.5,
+            slidesPerGroup: 1,
+            spaceBetween: 16,
+        },
         320: {
-            slidesPerView: 3,
+            slidesPerView: 1.1,
             slidesPerGroup: 1,
             spaceBetween: 16,
         },
@@ -239,12 +261,16 @@ let constructionSwiper = new Swiper(".construction-slider", {
             slidesPerView: 2,
             spaceBetween: 16,
         },
-        '620': {
-            slidesPerView: 2,
+        '570': {
+            slidesPerView: 1.5,
+            spaceBetween: 16,
+        },
+        '480': {
+            slidesPerView: 1.5,
             spaceBetween: 16,
         },
         '320': {
-            slidesPerView: 1,
+            slidesPerView: 1.1,
             slidesPerGroup: 1,
             spaceBetween: 8,
         },
@@ -290,8 +316,14 @@ let gallerySwiper = new Swiper(".gallery-slider", {
             slidesPerGroup: 1,
             loop: true,
         },
+        570: {
+            slidesPerView: 1.5,
+            spaceBetween: 16,
+            slidesPerGroup: 1,
+            loop: true,
+        },
         320: {
-            slidesPerView: 2,
+            slidesPerView: 1.1,
             spaceBetween: 16,
             slidesPerGroup: 1,
             loop: true,
@@ -324,8 +356,13 @@ let newsSwiper = new Swiper(".news-slider", {
             spaceBetween: 16,
             slidesPerGroup: 1,
         },
-        320: {
+        530: {
             slidesPerView: 2,
+            spaceBetween: 16,
+            slidesPerGroup: 1,
+        },
+        320: {
+            slidesPerView: 1,
             spaceBetween: 16,
             slidesPerGroup: 1,
             loop: true,
@@ -334,6 +371,10 @@ let newsSwiper = new Swiper(".news-slider", {
     navigation: {
         nextEl: ".news-next",
         prevEl: ".news-prev",
+    },
+    pagination: {
+        el: ".news-pagination",
+        clickable: true,
     },
 });
 

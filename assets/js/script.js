@@ -514,3 +514,37 @@ $('.real-estate-click').on('click', function () {
     });
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$('.construct-years-mobile').on('click', function () {
+    $('.construct-years').addClass('construct-years-open');
+})
+
+
+$('.open-year').on('click', function () {
+    $('.open-year').removeClass('active-year');
+    $(this).addClass('active-year');
+    $('.construct-years').removeClass('construct-years-open');
+
+    let selected_text = $(this).html();
+
+    $('.construct-years-mobile').html(selected_text);
+
+})

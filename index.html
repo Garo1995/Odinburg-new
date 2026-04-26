@@ -1240,7 +1240,13 @@
                         <div class="modal-drag-zone">
                             <span class="close-filt-map"></span>
                         </div>
-
+                        <div class="reset-filters-mobile G-align-center">
+                            <h4>Фильтры</h4>
+                            <div class="reset-filters">
+                                <i class="icon-x"></i>
+                                Сбросить фильтры
+                            </div>
+                        </div>
 
                         <div class="select-parameter-fon ">
 
@@ -1396,6 +1402,11 @@
                                     Сбросить фильтры
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="request-found-mob">
+                            <button class="submit-request-found">Оставить заявку</button>
+                            <span>Найдено 24</span>
                         </div>
                     </div>
                     <div class="estate-filter-min">
@@ -4572,8 +4583,17 @@
                 <div class="modal-drag-zone">
                     <span class="close-filt-map"></span>
                 </div>
+                <div class="reset-filters-mobile G-align-center">
+                    <h4>Фильтры</h4>
+                    <div class="reset-filters">
+                        <i class="icon-x"></i>
+                        Сбросить фильтры
+                    </div>
+                </div>
 
                 <div class="mortgage-calc-wrap G-flex-wrap">
+
+
                     <div class="frame-select">
                         <small>Ипотечная программа</small>
                         <label>
@@ -4585,7 +4605,6 @@
                             </select>
                         </label>
                     </div>
-
                     <div class="filter-block" data-field="price">
                         <small>Стоимость квартиры, ₽</small>
                         <div class="range-row">
@@ -4597,7 +4616,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="filter-block" data-field="deposit">
                         <small>Первоначальный взнос, ₽</small>
                         <div class="range-row">
@@ -4612,7 +4630,6 @@
                             <div class="range-percent" id="deposit-percent">10%</div>
                         </div>
                     </div>
-
                     <div class="filter-block" data-field="term">
                         <small>Срок ипотеки, лет</small>
                         <div class="range-row">
@@ -4627,7 +4644,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="filter-block" data-field="loan">
                         <small>Сумма кредита, ₽</small>
                         <div class="range-row">
@@ -4639,7 +4655,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="calc-percent">
                         <ul id="preset-percent">
                             <li data-percent="20">20%</li>
@@ -4668,6 +4683,11 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="request-found-mob">
+                    <button class="submit-request-found">Оставить заявку</button>
+                    <span>Найдено 24</span>
+                </div>
             </div>
 
             <div class="mort-bank-card">
@@ -4684,7 +4704,10 @@
                                 </div>
                                 <div class="subsidy-mort-bank G-align-start ">
                                     <div class="subsidy-mort-count">
-                                        <p>Платеж</p>
+                                        <div class="G-align-center">
+                                            <p>Платеж</p> <i class="icon-circle-help"></i>
+                                        </div>
+                                        <span class="subsidy-count-mobile">от 45 567₽ </span>
                                         <div class="subsidy-mort-center G-align-start">
                                             <div class="G-flex-column G-align-start">
                                                 <span>от 45 567₽</span>
@@ -4698,7 +4721,10 @@
                                         </div>
                                     </div>
                                     <div class="subsidy-mort-count">
-                                        <p>Ставка</p>
+                                        <div class="G-align-center">
+                                            <p>Ставка</p> <i class="icon-circle-help"></i>
+                                        </div>
+                                        <span class="subsidy-count-mobile">от 45 567₽ </span>
                                         <div class="subsidy-mort-center G-align-start">
                                             <div class="G-flex-column G-align-start">
                                                 <span>от 6%</span>
@@ -4841,7 +4867,10 @@
                                 <span class="close-filt-map"></span>
                             </div>
                             <div class="subsidy-mort-count">
-                                <p>Платеж</p>
+                                <div class="G-align-center">
+                                    <p>Платеж</p> <i class="icon-circle-help"></i>
+                                </div>
+                                <span class="subsidy-count-mobile">от 45 567₽ </span>
                                 <div class="subsidy-mort-center G-align-start">
                                     <div class="G-flex-column G-align-start">
                                         <span>от 45 567₽</span>
@@ -4855,7 +4884,11 @@
                                 </div>
                             </div>
                             <div class="subsidy-mort-count">
-                                <p>Ставка</p>
+                                <div class="G-align-center">
+                                    <p>Ставка</p> <i class="icon-circle-help"></i>
+                                </div>
+
+                                <span class="subsidy-count-mobile">от 45 567₽ </span>
                                 <div class="subsidy-mort-center G-align-start">
                                     <div class="G-flex-column G-align-start">
                                         <span>от 6%</span>
@@ -5585,6 +5618,9 @@
 
 
         <div class="construct-flex G-align-center G-justify-between">
+            <div class="construct-years-mobile">
+                2024
+            </div>
             <div class="construct-years">
                 <ul>
                     <li class="open-year active-year" data-year="2024">2024</li>
@@ -5692,6 +5728,7 @@
 
                 </div>
             </div>
+            <div class="news-pagination swiper-pagination"></div>
         </div>
     </div>
 </section>
