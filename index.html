@@ -4594,17 +4594,30 @@
                 <div class="mortgage-calc-wrap G-flex-wrap">
 
 
-                    <div class="frame-select">
+                    <div class="calculate-menu ">
                         <small>Ипотечная программа</small>
-                        <label>
-                            <select name="frame-select" id="frame-select-two">
-                                <option value="">Все</option>
-                                <option value="">Корпус ЛУЧ-4</option>
-                                <option value="">Корпус 4А</option>
-                                <option value="">Корпус 4Б</option>
-                            </select>
-                        </label>
+                        <div class="calculate-menu-click G-align-center">
+
+                        </div>
+                        <ul class="calculate-menu-drop filter-list">
+                            <li class="family-mortgage-data calculate-sel" data-type="FAMILY" data-name="Семейная">
+                                <span class="checkbox-calc"></span> Семейная
+                            </li>
+
+                            <li class="family-mortgage-data calculate-sel" data-type="STANDARD" data-name="Стандартная">
+                                <span class="checkbox-calc"></span> Стандартная
+                            </li>
+
+                            <li class="family-mortgage-data" data-type="IT" data-name="IT">
+                                <span class="checkbox-calc"></span> IT ипотека
+                            </li>
+
+                            <li class="family-mortgage-data" data-type="SUBSIDIZED" data-name="Субсидированная">
+                                <span class="checkbox-calc"></span> Субсидированная
+                            </li>
+                        </ul>
                     </div>
+
                     <div class="filter-block" data-field="price">
                         <small>Стоимость квартиры, ₽</small>
                         <div class="range-row">
@@ -4690,19 +4703,322 @@
                 </div>
             </div>
 
-            <div class="mort-bank-card">
-                <div class="mortgage-scr-max">
-                    <div class="bank-card-box bank-act-drop">
-                        <div class="bank-card-fon">
-                            <div class="bank-card-info G-align-start">
-                                <div class="subsidy-mortgage G-align-center">
-                                    <img src="./assets/img/logo-sber.png" alt="logo-sber">
-                                    <div class="subsidy-mortgage-bank G-flex-column G-align-start">
-                                        <span>СберБанк</span>
-                                        <small class="subsidy-mortgage-name">Стандартная</small>
+
+            <div class="calculate-mort-block">
+                <div class="mortgage-list G-flex-wrap">
+
+                    <div class="family-mortgage" data-type="FAMILY">
+
+                        <div class="family-mortgage-cnt">
+                            <div class="family-mortgage-center G-align-start G-justify-between">
+                                <h2>Семейная ипотека</h2>
+                                <span class="bid-mortg"><span>ставка</span> 5,5%</span>
+                            </div>
+                            <div class="family-mortgage-coll">
+                                <div class="mortgage-price G-flex-column"><p>Первый взнос</p> <strong>20.01%</strong>
+                                </div>
+                                <div class="mortgage-price G-flex-column"><p>Ежемесячный платеж</p> <strong>23 834
+                                    ₽</strong></div>
+                                <div class="mortgage-price G-flex-column"><p>Срок ипотеки</p> <strong>до 15 лет</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="family-mortgage-flex ">
+                            <div class="family-mortgage-price G-align-center">
+                                <div class="family-mortgage-icons"><i class="icon-arrow-top"></i></div>
+                                <span>Меньше на 71 .042 ₽</span></div>
+                            <div class="family-mortgage-logos G-align-center">
+                                <div class="family-mortgage-photo G-flex">
+                                    <img src="./assets/img/logos-1.png" alt="logos"></div>
+                                <div class="family-mortgage-photo G-flex">
+                                    <img src="./assets/img/logos-2.png" alt="logos"></div>
+                                <div class="family-mortgage-photo G-flex">
+                                    <img src="./assets/img/logos-1.png" alt="logos"></div>
+                                <div class="family-mortgage-photo G-flex">
+                                    <img src="./assets/img/logos-2.png" alt="logos"></div>
+                                <div class="mortgage-count G-center"><span>+5</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="family-mortgage" data-type="STANDARD">
+                        <div class="family-mortgage-cnt">
+                            <div class="family-mortgage-center G-align-start G-justify-between">
+                                <h2>Стандартная ипотека</h2>
+                                <span class="bid-mortg"><span>ставка</span> 5,5%</span>
+                            </div>
+                            <div class="family-mortgage-coll">
+                                <div class="mortgage-price G-flex-column"><p>Первый взнос</p> <strong>20.01%</strong>
+                                </div>
+                                <div class="mortgage-price G-flex-column"><p>Ежемесячный платеж</p> <strong>23 834
+                                    ₽</strong></div>
+                                <div class="mortgage-price G-flex-column"><p>Срок ипотеки</p> <strong>до 15 лет</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="family-mortgage-flex ">
+                            <div class="family-mortgage-price G-align-center">
+                                <div class="family-mortgage-icons"><i class="icon-arrow-top"></i></div>
+                                <span>Меньше на 71 .042 ₽</span></div>
+
+                            <div class="family-mortgage-logos G-align-center">
+                                <div class="family-mortgage-photo G-flex">
+                                    <img src="./assets/img/logos-1.png" alt="logos"></div>
+                                <div class="family-mortgage-photo G-flex">
+                                    <img src="./assets/img/logos-2.png" alt="logos"></div>
+                                <div class="family-mortgage-photo G-flex">
+                                    <img src="./assets/img/logos-1.png" alt="logos"></div>
+                                <div class="family-mortgage-photo G-flex">
+                                    <img src="./assets/img/logos-2.png" alt="logos"></div>
+                                <div class="mortgage-count G-center"><span>+5</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="family-mortgage" data-type="IT">
+                        <div class="family-mortgage-cnt">
+                            <div class="family-mortgage-center G-align-start G-justify-between">
+                                <h2>IT ипотека</h2>
+                                <span class="bid-mortg"><span>ставка</span> 5,5%</span>
+                            </div>
+                            <div class="family-mortgage-coll">
+                                <div class="mortgage-price G-flex-column"><p>Первый взнос</p> <strong>20.01%</strong>
+                                </div>
+                                <div class="mortgage-price G-flex-column"><p>Ежемесячный платеж</p> <strong>23 834
+                                    ₽</strong></div>
+                                <div class="mortgage-price G-flex-column"><p>Срок ипотеки</p> <strong>до 15 лет</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="family-mortgage-flex ">
+                            <div class="family-mortgage-price G-align-center">
+                                <div class="family-mortgage-icons"><i class="icon-arrow-top"></i></div>
+                                <span>Меньше на 71 .042 ₽</span></div>
+                            <div class="family-mortgage-logos G-align-center">
+                                <div class="family-mortgage-photo G-flex">
+                                    <img src="./assets/img/logos-1.png" alt="logos"></div>
+                                <div class="family-mortgage-photo G-flex">
+                                    <img src="./assets/img/logos-2.png" alt="logos"></div>
+                                <div class="family-mortgage-photo G-flex">
+                                    <img src="./assets/img/logos-1.png" alt="logos"></div>
+                                <div class="family-mortgage-photo G-flex">
+                                    <img src="./assets/img/logos-2.png" alt="logos"></div>
+                                <div class="mortgage-count G-center"><span>+5</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="family-mortgage" data-type="SUBSIDIZED">
+                        <div class="family-mortgage-cnt">
+
+                            <div class="family-mortgage-center G-align-start G-justify-between">
+                                <h2>Субсидированная ипотека</h2>
+                                <span class="bid-mortg"><span>ставка</span> 5,5%</span>
+                            </div>
+                            <div class="family-mortgage-coll">
+                                <div class="mortgage-price G-flex-column"><p>Первый взнос</p> <strong>20.01%</strong>
+                                </div>
+                                <div class="mortgage-price G-flex-column"><p>Ежемесячный платеж</p> <strong>23 834
+                                    ₽</strong></div>
+                                <div class="mortgage-price G-flex-column"><p>Срок ипотеки</p> <strong>до 15 лет</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="family-mortgage-flex ">
+                            <div class="family-mortgage-price G-align-center">
+                                <div class="family-mortgage-icons"><i class="icon-arrow-top"></i></div>
+                                <span>Меньше на 71 .042 ₽</span></div>
+                            <div class="family-mortgage-logos G-align-center">
+                                <div class="family-mortgage-photo G-flex">
+                                    <img src="./assets/img/logos-1.png" alt="logos"></div>
+                                <div class="family-mortgage-photo G-flex">
+                                    <img src="./assets/img/logos-2.png" alt="logos"></div>
+                                <div class="family-mortgage-photo G-flex">
+                                    <img src="./assets/img/logos-1.png" alt="logos"></div>
+                                <div class="family-mortgage-photo G-flex">
+                                    <img src="./assets/img/logos-2.png" alt="logos"></div>
+                                <div class="mortgage-count G-center"><span>+5</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mortgage-table">
+                    <div class="mort-bank-card">
+                        <div class="mortgage-scr-max">
+                            <div class="bank-card-box bank-act-drop">
+                                <div class="bank-card-fon">
+                                    <div class="bank-card-info G-align-start">
+                                        <div class="subsidy-mortgage G-align-center">
+                                            <img src="./assets/img/logo-sber.png" alt="logo-sber">
+                                            <div class="subsidy-mortgage-bank G-flex-column G-align-start">
+                                                <span>СберБанк</span>
+                                                <small class="subsidy-mortgage-name">Стандартная</small>
+                                            </div>
+                                        </div>
+                                        <div class="subsidy-mort-bank G-align-start ">
+                                            <div class="subsidy-mort-count">
+                                                <div class="G-align-center">
+                                                    <p>Платеж</p> <i class="icon-circle-help"></i>
+                                                </div>
+                                                <span class="subsidy-count-mobile">от 45 567₽ </span>
+                                                <div class="subsidy-mort-center G-align-start">
+                                                    <div class="G-flex-column G-align-start">
+                                                        <span>от 45 567₽</span>
+                                                        <div class="first-months">Badge</div>
+                                                    </div>
+                                                    <i class="arrow-right-sm"></i>
+                                                    <div class="G-flex-column G-align-start">
+                                                        <span>от 45 567₽</span>
+                                                        <div class="first-months-one">Badge</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="subsidy-mort-count">
+                                                <div class="G-align-center">
+                                                    <p>Ставка</p> <i class="icon-circle-help"></i>
+                                                </div>
+                                                <span class="subsidy-count-mobile">от 45 567₽ </span>
+                                                <div class="subsidy-mort-center G-align-start">
+                                                    <div class="G-flex-column G-align-start">
+                                                        <span>от 6%</span>
+                                                        <div class="first-months">Badge</div>
+                                                    </div>
+                                                    <i class="arrow-right-sm"></i>
+                                                    <div class="G-flex-column G-align-start">
+                                                        <span>от 19,9%</span>
+                                                        <div class="first-months-one">Badge</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="subsidy-mort-count">
+                                                <p>Срок</p>
+                                                <span>до 30 лет</span>
+                                            </div>
+                                        </div>
+                                        <div class="bank-card-btn G-align-start">
+                                            <div class="G-flex-column G-align-center">
+                                                <button data-modal-target="#submit-application" class="card submit-request">
+                                                    Оставить заявку
+                                                </button>
+                                                <a href="#" class="fill-out-form">Заполнить анкету</a>
+                                            </div>
+                                            <span class="open-bank-card"><i class="arrow-down"></i></span>
+                                        </div>
+                                        <span class="subsidized-rate">*-субсидированная ставка</span>
+                                    </div>
+                                    <div class="bank-card-drop">
+                                        <div class="bank-card-skrit">
+                                            <div class="subsidy-mortgage G-align-center">
+                                                <img src="./assets/img/logo-sber.png" alt="logo-sber">
+                                                <div class="subsidy-mortgage-bank G-flex-column G-align-start">
+                                                    <span>СберБанк</span>
+                                                    <small class="subsidy-mortgage-name">Стандартная</small>
+                                                </div>
+                                            </div>
+                                            <div class="subsidy-mort-bank G-align-start ">
+                                                <div class="subsidy-mort-count">
+                                                    <p>Ставка</p>
+                                                    <span>3,5%</span>
+                                                </div>
+                                                <div class="subsidy-mort-count">
+                                                    <p>Платеж</p>
+                                                    <span>45 567₽</span>
+                                                </div>
+                                                <div class="subsidy-mort-count">
+                                                    <p>Срок</p>
+                                                    <span>до 30 лет</span>
+                                                </div>
+                                            </div>
+                                            <div class="bank-card-btn G-align-start">
+                                                <div class="G-flex-column G-align-center">
+                                                    <button data-modal-target="#submit-application" class="card submit-request">
+                                                        Оставить заявку
+                                                    </button>
+                                                    <a href="#" class="fill-out-form">Заполнить анкету</a>
+                                                </div>
+                                            </div>
+                                            <span class="subsidized-rate">*-субсидированная ставка</span>
+                                        </div>
+                                        <div class="bank-card-skrit">
+                                            <div class="subsidy-mortgage G-align-center">
+                                                <img src="./assets/img/logo-sber.png" alt="logo-sber">
+                                                <div class="subsidy-mortgage-bank G-flex-column G-align-start">
+                                                    <span>СберБанк</span>
+                                                    <small class="subsidy-mortgage-name">Стандартная</small>
+                                                </div>
+                                            </div>
+                                            <div class="subsidy-mort-bank G-align-start ">
+                                                <div class="subsidy-mort-count">
+                                                    <p>Ставка</p>
+                                                    <span>3,5%</span>
+                                                </div>
+                                                <div class="subsidy-mort-count">
+                                                    <p>Платеж</p>
+                                                    <span>45 567₽</span>
+                                                </div>
+                                                <div class="subsidy-mort-count">
+                                                    <p>Срок</p>
+                                                    <span>до 30 лет</span>
+                                                </div>
+                                            </div>
+                                            <div class="bank-card-btn G-align-start">
+                                                <div class="G-flex-column G-align-center">
+                                                    <button data-modal-target="#submit-application" class="card submit-request">
+                                                        Оставить заявку
+                                                    </button>
+                                                    <a href="#" class="fill-out-form">Заполнить анкету</a>
+                                                </div>
+                                            </div>
+                                            <span class="subsidized-rate">*-субсидированная ставка</span>
+
+                                        </div>
+                                        <div class="bank-card-skrit">
+                                            <div class="subsidy-mortgage G-align-center">
+                                                <img src="./assets/img/logo-sber.png" alt="logo-sber">
+                                                <div class="subsidy-mortgage-bank G-flex-column G-align-start">
+                                                    <span>СберБанк</span>
+                                                    <small class="subsidy-mortgage-name">Стандартная</small>
+                                                </div>
+                                            </div>
+                                            <div class="subsidy-mort-bank G-align-start ">
+                                                <div class="subsidy-mort-count">
+                                                    <p>Ставка</p>
+                                                    <span>3,5%</span>
+                                                </div>
+                                                <div class="subsidy-mort-count">
+                                                    <p>Платеж</p>
+                                                    <span>45 567₽</span>
+                                                </div>
+                                                <div class="subsidy-mort-count">
+                                                    <p>Срок</p>
+                                                    <span>до 30 лет</span>
+                                                </div>
+                                            </div>
+                                            <div class="bank-card-btn G-align-start">
+                                                <div class="G-flex-column G-align-center">
+                                                    <button data-modal-target="#submit-application" class="card submit-request">
+                                                        Оставить заявку
+                                                    </button>
+                                                    <a href="#" class="fill-out-form">Заполнить анкету</a>
+                                                </div>
+                                            </div>
+                                            <span class="subsidized-rate">*-субсидированная ставка</span>
+
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="subsidy-mort-bank G-align-start ">
+                                <div class="open-bank-mobile">
+                                    <div class="open-bank-card">
+                                        <span class="three-more-offers">еще 3 предложения</span>
+                                        <span class="more-offers-hide">Скрыть </span>
+                                    </div>
+                                </div>
+
+                                <div class="touchstart subsidy-mobs">
+                                    <div class="modal-drag-zone">
+                                        <span class="close-filt-map"></span>
+                                    </div>
                                     <div class="subsidy-mort-count">
                                         <div class="G-align-center">
                                             <p>Платеж</p> <i class="icon-circle-help"></i>
@@ -4724,6 +5040,7 @@
                                         <div class="G-align-center">
                                             <p>Ставка</p> <i class="icon-circle-help"></i>
                                         </div>
+
                                         <span class="subsidy-count-mobile">от 45 567₽ </span>
                                         <div class="subsidy-mort-center G-align-start">
                                             <div class="G-flex-column G-align-start">
@@ -4737,471 +5054,315 @@
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="subsidy-mort-count">
-                                        <p>Срок</p>
-                                        <span>до 30 лет</span>
-                                    </div>
-                                </div>
-                                <div class="bank-card-btn G-align-start">
-                                    <div class="G-flex-column G-align-center">
-                                        <button data-modal-target="#submit-application" class="card submit-request">
-                                            Оставить заявку
-                                        </button>
-                                        <a href="#" class="fill-out-form">Заполнить анкету</a>
-                                    </div>
-                                    <span class="open-bank-card"><i class="arrow-down"></i></span>
-                                </div>
-                                <span class="subsidized-rate">*-субсидированная ставка</span>
-                            </div>
-                            <div class="bank-card-drop">
-                                <div class="bank-card-skrit">
-                                    <div class="subsidy-mortgage G-align-center">
-                                        <img src="./assets/img/logo-sber.png" alt="logo-sber">
-                                        <div class="subsidy-mortgage-bank G-flex-column G-align-start">
-                                            <span>СберБанк</span>
-                                            <small class="subsidy-mortgage-name">Стандартная</small>
-                                        </div>
-                                    </div>
-                                    <div class="subsidy-mort-bank G-align-start ">
-                                        <div class="subsidy-mort-count">
-                                            <p>Ставка</p>
-                                            <span>3,5%</span>
-                                        </div>
-                                        <div class="subsidy-mort-count">
-                                            <p>Платеж</p>
-                                            <span>45 567₽</span>
-                                        </div>
-                                        <div class="subsidy-mort-count">
-                                            <p>Срок</p>
-                                            <span>до 30 лет</span>
-                                        </div>
-                                    </div>
-                                    <div class="bank-card-btn G-align-start">
-                                        <div class="G-flex-column G-align-center">
-                                            <button data-modal-target="#submit-application" class="card submit-request">
-                                                Оставить заявку
-                                            </button>
-                                            <a href="#" class="fill-out-form">Заполнить анкету</a>
-                                        </div>
-                                    </div>
-                                    <span class="subsidized-rate">*-субсидированная ставка</span>
-                                </div>
-                                <div class="bank-card-skrit">
-                                    <div class="subsidy-mortgage G-align-center">
-                                        <img src="./assets/img/logo-sber.png" alt="logo-sber">
-                                        <div class="subsidy-mortgage-bank G-flex-column G-align-start">
-                                            <span>СберБанк</span>
-                                            <small class="subsidy-mortgage-name">Стандартная</small>
-                                        </div>
-                                    </div>
-                                    <div class="subsidy-mort-bank G-align-start ">
-                                        <div class="subsidy-mort-count">
-                                            <p>Ставка</p>
-                                            <span>3,5%</span>
-                                        </div>
-                                        <div class="subsidy-mort-count">
-                                            <p>Платеж</p>
-                                            <span>45 567₽</span>
-                                        </div>
-                                        <div class="subsidy-mort-count">
-                                            <p>Срок</p>
-                                            <span>до 30 лет</span>
-                                        </div>
-                                    </div>
-                                    <div class="bank-card-btn G-align-start">
-                                        <div class="G-flex-column G-align-center">
-                                            <button data-modal-target="#submit-application" class="card submit-request">
-                                                Оставить заявку
-                                            </button>
-                                            <a href="#" class="fill-out-form">Заполнить анкету</a>
-                                        </div>
-                                    </div>
-                                    <span class="subsidized-rate">*-субсидированная ставка</span>
-
-                                </div>
-                                <div class="bank-card-skrit">
-                                    <div class="subsidy-mortgage G-align-center">
-                                        <img src="./assets/img/logo-sber.png" alt="logo-sber">
-                                        <div class="subsidy-mortgage-bank G-flex-column G-align-start">
-                                            <span>СберБанк</span>
-                                            <small class="subsidy-mortgage-name">Стандартная</small>
-                                        </div>
-                                    </div>
-                                    <div class="subsidy-mort-bank G-align-start ">
-                                        <div class="subsidy-mort-count">
-                                            <p>Ставка</p>
-                                            <span>3,5%</span>
-                                        </div>
-                                        <div class="subsidy-mort-count">
-                                            <p>Платеж</p>
-                                            <span>45 567₽</span>
-                                        </div>
-                                        <div class="subsidy-mort-count">
-                                            <p>Срок</p>
-                                            <span>до 30 лет</span>
-                                        </div>
-                                    </div>
-                                    <div class="bank-card-btn G-align-start">
-                                        <div class="G-flex-column G-align-center">
-                                            <button data-modal-target="#submit-application" class="card submit-request">
-                                                Оставить заявку
-                                            </button>
-                                            <a href="#" class="fill-out-form">Заполнить анкету</a>
-                                        </div>
-                                    </div>
-                                    <span class="subsidized-rate">*-субсидированная ставка</span>
-
                                 </div>
                             </div>
+
+                            <div class="bank-card-box bank-act-drop">
+                                <div class="bank-card-fon">
+                                    <div class="bank-card-info G-align-start">
+                                        <div class="subsidy-mortgage G-align-center">
+                                            <img src="./assets/img/logo-sber.png" alt="logo-sber">
+                                            <div class="subsidy-mortgage-bank G-flex-column G-align-start">
+                                                <span>СберБанк</span>
+                                                <small class="subsidy-mortgage-name">Стандартная</small>
+                                            </div>
+                                        </div>
+                                        <div class="subsidy-mort-bank G-align-start ">
+                                            <div class="subsidy-mort-count">
+                                                <p>Ставка</p>
+                                                <span>3,5%</span>
+                                            </div>
+                                            <div class="subsidy-mort-count">
+                                                <p>Платеж</p>
+                                                <span>45 567₽</span>
+                                            </div>
+                                            <div class="subsidy-mort-count">
+                                                <p>Срок</p>
+                                                <span>до 30 лет</span>
+                                            </div>
+                                        </div>
+                                        <div class="bank-card-btn G-align-start">
+                                            <div class="G-flex-column G-align-center">
+                                                <button data-modal-target="#submit-application" class="card submit-request">
+                                                    Оставить заявку
+                                                </button>
+                                                <a href="#" class="fill-out-form">Заполнить анкету</a>
+                                            </div>
+                                            <span class="open-bank-card"><i class="arrow-down"></i></span>
+                                        </div>
+                                        <span class="subsidized-rate">*-субсидированная ставка</span>
+
+                                    </div>
+                                    <div class="bank-card-drop">
+                                        <div class="bank-card-skrit">
+                                            <div class="subsidy-mortgage G-align-center">
+                                                <img src="./assets/img/logo-sber.png" alt="logo-sber">
+                                                <div class="subsidy-mortgage-bank G-flex-column G-align-start">
+                                                    <span>СберБанк</span>
+                                                    <small class="subsidy-mortgage-name">Стандартная</small>
+                                                </div>
+                                            </div>
+                                            <div class="subsidy-mort-bank G-align-start ">
+                                                <div class="subsidy-mort-count">
+                                                    <p>Ставка</p>
+                                                    <span>3,5%</span>
+                                                </div>
+                                                <div class="subsidy-mort-count">
+                                                    <p>Платеж</p>
+                                                    <span>45 567₽</span>
+                                                </div>
+                                                <div class="subsidy-mort-count">
+                                                    <p>Срок</p>
+                                                    <span>до 30 лет</span>
+                                                </div>
+                                            </div>
+                                            <div class="bank-card-btn G-align-start">
+                                                <div class="G-flex-column G-align-center">
+                                                    <button data-modal-target="#submit-application" class="card submit-request">
+                                                        Оставить заявку
+                                                    </button>
+                                                    <a href="#" class="fill-out-form">Заполнить анкету</a>
+                                                </div>
+
+                                            </div>
+                                            <span class="subsidized-rate">*-субсидированная ставка</span>
+
+                                        </div>
+                                        <div class="bank-card-skrit">
+                                            <div class="subsidy-mortgage G-align-center">
+                                                <img src="./assets/img/logo-sber.png" alt="logo-sber">
+                                                <div class="subsidy-mortgage-bank G-flex-column G-align-start">
+                                                    <span>СберБанк</span>
+                                                    <small class="subsidy-mortgage-name">Стандартная</small>
+                                                </div>
+                                            </div>
+                                            <div class="subsidy-mort-bank G-align-start ">
+                                                <div class="subsidy-mort-count">
+                                                    <p>Ставка</p>
+                                                    <span>3,5%</span>
+                                                </div>
+                                                <div class="subsidy-mort-count">
+                                                    <p>Платеж</p>
+                                                    <span>45 567₽</span>
+                                                </div>
+                                                <div class="subsidy-mort-count">
+                                                    <p>Срок</p>
+                                                    <span>до 30 лет</span>
+                                                </div>
+                                            </div>
+                                            <div class="bank-card-btn G-align-center">
+                                                <div class="G-flex-column G-align-center">
+                                                    <button data-modal-target="#submit-application" class="card submit-request">
+                                                        Оставить заявку
+                                                    </button>
+                                                    <a href="#" class="fill-out-form">Заполнить анкету</a>
+                                                </div>
+                                            </div>
+                                            <span class="subsidized-rate">*-субсидированная ставка</span>
+
+                                        </div>
+                                        <div class="bank-card-skrit">
+                                            <div class="subsidy-mortgage G-align-center">
+                                                <img src="./assets/img/logo-sber.png" alt="logo-sber">
+                                                <div class="subsidy-mortgage-bank G-flex-column G-align-start">
+                                                    <span>СберБанк</span>
+                                                    <small class="subsidy-mortgage-name">Стандартная</small>
+                                                </div>
+                                            </div>
+                                            <div class="subsidy-mort-bank G-align-start ">
+                                                <div class="subsidy-mort-count">
+                                                    <p>Ставка</p>
+                                                    <span>3,5%</span>
+                                                </div>
+                                                <div class="subsidy-mort-count">
+                                                    <p>Платеж</p>
+                                                    <span>45 567₽</span>
+                                                </div>
+                                                <div class="subsidy-mort-count">
+                                                    <p>Срок</p>
+                                                    <span>до 30 лет</span>
+                                                </div>
+                                            </div>
+                                            <div class="bank-card-btn G-align-center">
+                                                <div class="G-flex-column G-align-center">
+                                                    <button data-modal-target="#submit-application" class="card submit-request">
+                                                        Оставить заявку
+                                                    </button>
+                                                    <a href="#" class="fill-out-form">Заполнить анкету</a>
+                                                </div>
+                                            </div>
+                                            <span class="subsidized-rate">*-субсидированная ставка</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="open-bank-mobile">
+                                    <div class="open-bank-card">
+                                        <span class="three-more-offers">еще 3 предложения</span>
+                                        <span class="more-offers-hide">Скрыть </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bank-card-box bank-act-drop">
+                                <div class="bank-card-fon">
+                                    <div class="bank-card-info G-align-start">
+                                        <div class="subsidy-mortgage G-align-center">
+                                            <img src="./assets/img/logo-sber.png" alt="logo-sber">
+                                            <div class="subsidy-mortgage-bank G-flex-column G-align-start">
+                                                <span>СберБанк</span>
+                                                <small class="subsidy-mortgage-name">Стандартная</small>
+                                            </div>
+                                        </div>
+                                        <div class="subsidy-mort-bank G-align-start ">
+                                            <div class="subsidy-mort-count">
+                                                <p>Ставка</p>
+                                                <span>3,5%</span>
+                                            </div>
+                                            <div class="subsidy-mort-count">
+                                                <p>Платеж</p>
+                                                <span>45 567₽</span>
+                                            </div>
+                                            <div class="subsidy-mort-count">
+                                                <p>Срок</p>
+                                                <span>до 30 лет</span>
+                                            </div>
+                                        </div>
+                                        <div class="bank-card-btn G-align-start">
+                                            <div class="G-flex-column G-align-center">
+                                                <button data-modal-target="#submit-application" class="card submit-request">
+                                                    Оставить заявку
+                                                </button>
+                                                <a href="#" class="fill-out-form">Заполнить анкету</a>
+                                            </div>
+                                            <span class="open-bank-card"><i class="arrow-down"></i></span>
+                                        </div>
+                                        <span class="subsidized-rate">*-субсидированная ставка</span>
+
+                                    </div>
+                                    <div class="bank-card-drop">
+                                        <div class="bank-card-skrit">
+                                            <div class="subsidy-mortgage G-align-center">
+                                                <img src="./assets/img/logo-sber.png" alt="logo-sber">
+                                                <div class="subsidy-mortgage-bank G-flex-column G-align-start">
+                                                    <span>СберБанк</span>
+                                                    <small class="subsidy-mortgage-name">Стандартная</small>
+                                                </div>
+                                            </div>
+                                            <div class="subsidy-mort-bank G-align-start ">
+                                                <div class="subsidy-mort-count">
+                                                    <p>Ставка</p>
+                                                    <span>3,5%</span>
+                                                </div>
+                                                <div class="subsidy-mort-count">
+                                                    <p>Платеж</p>
+                                                    <span>45 567₽</span>
+                                                </div>
+                                                <div class="subsidy-mort-count">
+                                                    <p>Срок</p>
+                                                    <span>до 30 лет</span>
+                                                </div>
+                                            </div>
+                                            <div class="bank-card-btn G-align-start">
+                                                <div class="G-flex-column G-align-center">
+                                                    <button data-modal-target="#submit-application" class="card submit-request">
+                                                        Оставить заявку
+                                                    </button>
+                                                    <a href="#" class="fill-out-form">Заполнить анкету</a>
+                                                </div>
+
+                                            </div>
+                                            <span class="subsidized-rate">*-субсидированная ставка</span>
+
+                                        </div>
+                                        <div class="bank-card-skrit">
+                                            <div class="subsidy-mortgage G-align-center">
+                                                <img src="./assets/img/logo-sber.png" alt="logo-sber">
+                                                <div class="subsidy-mortgage-bank G-flex-column G-align-start">
+                                                    <span>СберБанк</span>
+                                                    <small class="subsidy-mortgage-name">Стандартная</small>
+                                                </div>
+                                            </div>
+                                            <div class="subsidy-mort-bank G-align-start ">
+                                                <div class="subsidy-mort-count">
+                                                    <p>Ставка</p>
+                                                    <span>3,5%</span>
+                                                </div>
+                                                <div class="subsidy-mort-count">
+                                                    <p>Платеж</p>
+                                                    <span>45 567₽</span>
+                                                </div>
+                                                <div class="subsidy-mort-count">
+                                                    <p>Срок</p>
+                                                    <span>до 30 лет</span>
+                                                </div>
+                                            </div>
+                                            <div class="bank-card-btn G-align-center">
+                                                <div class="G-flex-column G-align-center">
+                                                    <button data-modal-target="#submit-application" class="card submit-request">
+                                                        Оставить заявку
+                                                    </button>
+                                                    <a href="#" class="fill-out-form">Заполнить анкету</a>
+                                                </div>
+                                            </div>
+                                            <span class="subsidized-rate">*-субсидированная ставка</span>
+
+                                        </div>
+                                        <div class="bank-card-skrit">
+                                            <div class="subsidy-mortgage G-align-center">
+                                                <img src="./assets/img/logo-sber.png" alt="logo-sber">
+                                                <div class="subsidy-mortgage-bank G-flex-column G-align-start">
+                                                    <span>СберБанк</span>
+                                                    <small class="subsidy-mortgage-name">Стандартная</small>
+                                                </div>
+                                            </div>
+                                            <div class="subsidy-mort-bank G-align-start ">
+                                                <div class="subsidy-mort-count">
+                                                    <p>Ставка</p>
+                                                    <span>3,5%</span>
+                                                </div>
+                                                <div class="subsidy-mort-count">
+                                                    <p>Платеж</p>
+                                                    <span>45 567₽</span>
+                                                </div>
+                                                <div class="subsidy-mort-count">
+                                                    <p>Срок</p>
+                                                    <span>до 30 лет</span>
+                                                </div>
+                                            </div>
+                                            <div class="bank-card-btn G-align-center">
+                                                <div class="G-flex-column G-align-center">
+                                                    <button data-modal-target="#submit-application" class="card submit-request">
+                                                        Оставить заявку
+                                                    </button>
+                                                    <a href="#" class="fill-out-form">Заполнить анкету</a>
+                                                </div>
+                                            </div>
+                                            <span class="subsidized-rate">*-субсидированная ставка</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="open-bank-mobile">
+                                    <div class="open-bank-card">
+                                        <span class="three-more-offers">еще 3 предложения</span>
+                                        <span class="more-offers-hide">Скрыть </span>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="open-bank-mobile">
-                            <div class="open-bank-card">
-                                <span class="three-more-offers">еще 3 предложения</span>
-                                <span class="more-offers-hide">Скрыть </span>
-                            </div>
-                        </div>
-
-                        <div class="touchstart subsidy-mobs">
-                            <div class="modal-drag-zone">
-                                <span class="close-filt-map"></span>
-                            </div>
-                            <div class="subsidy-mort-count">
-                                <div class="G-align-center">
-                                    <p>Платеж</p> <i class="icon-circle-help"></i>
-                                </div>
-                                <span class="subsidy-count-mobile">от 45 567₽ </span>
-                                <div class="subsidy-mort-center G-align-start">
-                                    <div class="G-flex-column G-align-start">
-                                        <span>от 45 567₽</span>
-                                        <div class="first-months">Badge</div>
-                                    </div>
-                                    <i class="arrow-right-sm"></i>
-                                    <div class="G-flex-column G-align-start">
-                                        <span>от 45 567₽</span>
-                                        <div class="first-months-one">Badge</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="subsidy-mort-count">
-                                <div class="G-align-center">
-                                    <p>Ставка</p> <i class="icon-circle-help"></i>
-                                </div>
-
-                                <span class="subsidy-count-mobile">от 45 567₽ </span>
-                                <div class="subsidy-mort-center G-align-start">
-                                    <div class="G-flex-column G-align-start">
-                                        <span>от 6%</span>
-                                        <div class="first-months">Badge</div>
-                                    </div>
-                                    <i class="arrow-right-sm"></i>
-                                    <div class="G-flex-column G-align-start">
-                                        <span>от 19,9%</span>
-                                        <div class="first-months-one">Badge</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bank-card-box bank-act-drop">
-                        <div class="bank-card-fon">
-                            <div class="bank-card-info G-align-start">
-                                <div class="subsidy-mortgage G-align-center">
-                                    <img src="./assets/img/logo-sber.png" alt="logo-sber">
-                                    <div class="subsidy-mortgage-bank G-flex-column G-align-start">
-                                        <span>СберБанк</span>
-                                        <small class="subsidy-mortgage-name">Стандартная</small>
-                                    </div>
-                                </div>
-                                <div class="subsidy-mort-bank G-align-start ">
-                                    <div class="subsidy-mort-count">
-                                        <p>Ставка</p>
-                                        <span>3,5%</span>
-                                    </div>
-                                    <div class="subsidy-mort-count">
-                                        <p>Платеж</p>
-                                        <span>45 567₽</span>
-                                    </div>
-                                    <div class="subsidy-mort-count">
-                                        <p>Срок</p>
-                                        <span>до 30 лет</span>
-                                    </div>
-                                </div>
-                                <div class="bank-card-btn G-align-start">
-                                    <div class="G-flex-column G-align-center">
-                                        <button data-modal-target="#submit-application" class="card submit-request">
-                                            Оставить заявку
-                                        </button>
-                                        <a href="#" class="fill-out-form">Заполнить анкету</a>
-                                    </div>
-                                    <span class="open-bank-card"><i class="arrow-down"></i></span>
-                                </div>
-                                <span class="subsidized-rate">*-субсидированная ставка</span>
-
-                            </div>
-                            <div class="bank-card-drop">
-                                <div class="bank-card-skrit">
-                                    <div class="subsidy-mortgage G-align-center">
-                                        <img src="./assets/img/logo-sber.png" alt="logo-sber">
-                                        <div class="subsidy-mortgage-bank G-flex-column G-align-start">
-                                            <span>СберБанк</span>
-                                            <small class="subsidy-mortgage-name">Стандартная</small>
-                                        </div>
-                                    </div>
-                                    <div class="subsidy-mort-bank G-align-start ">
-                                        <div class="subsidy-mort-count">
-                                            <p>Ставка</p>
-                                            <span>3,5%</span>
-                                        </div>
-                                        <div class="subsidy-mort-count">
-                                            <p>Платеж</p>
-                                            <span>45 567₽</span>
-                                        </div>
-                                        <div class="subsidy-mort-count">
-                                            <p>Срок</p>
-                                            <span>до 30 лет</span>
-                                        </div>
-                                    </div>
-                                    <div class="bank-card-btn G-align-start">
-                                        <div class="G-flex-column G-align-center">
-                                            <button data-modal-target="#submit-application" class="card submit-request">
-                                                Оставить заявку
-                                            </button>
-                                            <a href="#" class="fill-out-form">Заполнить анкету</a>
-                                        </div>
-
-                                    </div>
-                                    <span class="subsidized-rate">*-субсидированная ставка</span>
-
-                                </div>
-                                <div class="bank-card-skrit">
-                                    <div class="subsidy-mortgage G-align-center">
-                                        <img src="./assets/img/logo-sber.png" alt="logo-sber">
-                                        <div class="subsidy-mortgage-bank G-flex-column G-align-start">
-                                            <span>СберБанк</span>
-                                            <small class="subsidy-mortgage-name">Стандартная</small>
-                                        </div>
-                                    </div>
-                                    <div class="subsidy-mort-bank G-align-start ">
-                                        <div class="subsidy-mort-count">
-                                            <p>Ставка</p>
-                                            <span>3,5%</span>
-                                        </div>
-                                        <div class="subsidy-mort-count">
-                                            <p>Платеж</p>
-                                            <span>45 567₽</span>
-                                        </div>
-                                        <div class="subsidy-mort-count">
-                                            <p>Срок</p>
-                                            <span>до 30 лет</span>
-                                        </div>
-                                    </div>
-                                    <div class="bank-card-btn G-align-center">
-                                        <div class="G-flex-column G-align-center">
-                                            <button data-modal-target="#submit-application" class="card submit-request">
-                                                Оставить заявку
-                                            </button>
-                                            <a href="#" class="fill-out-form">Заполнить анкету</a>
-                                        </div>
-                                    </div>
-                                    <span class="subsidized-rate">*-субсидированная ставка</span>
-
-                                </div>
-                                <div class="bank-card-skrit">
-                                    <div class="subsidy-mortgage G-align-center">
-                                        <img src="./assets/img/logo-sber.png" alt="logo-sber">
-                                        <div class="subsidy-mortgage-bank G-flex-column G-align-start">
-                                            <span>СберБанк</span>
-                                            <small class="subsidy-mortgage-name">Стандартная</small>
-                                        </div>
-                                    </div>
-                                    <div class="subsidy-mort-bank G-align-start ">
-                                        <div class="subsidy-mort-count">
-                                            <p>Ставка</p>
-                                            <span>3,5%</span>
-                                        </div>
-                                        <div class="subsidy-mort-count">
-                                            <p>Платеж</p>
-                                            <span>45 567₽</span>
-                                        </div>
-                                        <div class="subsidy-mort-count">
-                                            <p>Срок</p>
-                                            <span>до 30 лет</span>
-                                        </div>
-                                    </div>
-                                    <div class="bank-card-btn G-align-center">
-                                        <div class="G-flex-column G-align-center">
-                                            <button data-modal-target="#submit-application" class="card submit-request">
-                                                Оставить заявку
-                                            </button>
-                                            <a href="#" class="fill-out-form">Заполнить анкету</a>
-                                        </div>
-                                    </div>
-                                    <span class="subsidized-rate">*-субсидированная ставка</span>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="open-bank-mobile">
-                            <div class="open-bank-card">
-                                <span class="three-more-offers">еще 3 предложения</span>
-                                <span class="more-offers-hide">Скрыть </span>
-                            </div>
+                        <div class="mort-bank-mob-btn G-justify-center">
+                            <button class="btn-see-more">Показать еще</button>
                         </div>
                     </div>
-                    <div class="bank-card-box bank-act-drop">
-                        <div class="bank-card-fon">
-                            <div class="bank-card-info G-align-start">
-                                <div class="subsidy-mortgage G-align-center">
-                                    <img src="./assets/img/logo-sber.png" alt="logo-sber">
-                                    <div class="subsidy-mortgage-bank G-flex-column G-align-start">
-                                        <span>СберБанк</span>
-                                        <small class="subsidy-mortgage-name">Стандартная</small>
-                                    </div>
-                                </div>
-                                <div class="subsidy-mort-bank G-align-start ">
-                                    <div class="subsidy-mort-count">
-                                        <p>Ставка</p>
-                                        <span>3,5%</span>
-                                    </div>
-                                    <div class="subsidy-mort-count">
-                                        <p>Платеж</p>
-                                        <span>45 567₽</span>
-                                    </div>
-                                    <div class="subsidy-mort-count">
-                                        <p>Срок</p>
-                                        <span>до 30 лет</span>
-                                    </div>
-                                </div>
-                                <div class="bank-card-btn G-align-start">
-                                    <div class="G-flex-column G-align-center">
-                                        <button data-modal-target="#submit-application" class="card submit-request">
-                                            Оставить заявку
-                                        </button>
-                                        <a href="#" class="fill-out-form">Заполнить анкету</a>
-                                    </div>
-                                    <span class="open-bank-card"><i class="arrow-down"></i></span>
-                                </div>
-                                <span class="subsidized-rate">*-субсидированная ставка</span>
-
-                            </div>
-                            <div class="bank-card-drop">
-                                <div class="bank-card-skrit">
-                                    <div class="subsidy-mortgage G-align-center">
-                                        <img src="./assets/img/logo-sber.png" alt="logo-sber">
-                                        <div class="subsidy-mortgage-bank G-flex-column G-align-start">
-                                            <span>СберБанк</span>
-                                            <small class="subsidy-mortgage-name">Стандартная</small>
-                                        </div>
-                                    </div>
-                                    <div class="subsidy-mort-bank G-align-start ">
-                                        <div class="subsidy-mort-count">
-                                            <p>Ставка</p>
-                                            <span>3,5%</span>
-                                        </div>
-                                        <div class="subsidy-mort-count">
-                                            <p>Платеж</p>
-                                            <span>45 567₽</span>
-                                        </div>
-                                        <div class="subsidy-mort-count">
-                                            <p>Срок</p>
-                                            <span>до 30 лет</span>
-                                        </div>
-                                    </div>
-                                    <div class="bank-card-btn G-align-start">
-                                        <div class="G-flex-column G-align-center">
-                                            <button data-modal-target="#submit-application" class="card submit-request">
-                                                Оставить заявку
-                                            </button>
-                                            <a href="#" class="fill-out-form">Заполнить анкету</a>
-                                        </div>
-
-                                    </div>
-                                    <span class="subsidized-rate">*-субсидированная ставка</span>
-
-                                </div>
-                                <div class="bank-card-skrit">
-                                    <div class="subsidy-mortgage G-align-center">
-                                        <img src="./assets/img/logo-sber.png" alt="logo-sber">
-                                        <div class="subsidy-mortgage-bank G-flex-column G-align-start">
-                                            <span>СберБанк</span>
-                                            <small class="subsidy-mortgage-name">Стандартная</small>
-                                        </div>
-                                    </div>
-                                    <div class="subsidy-mort-bank G-align-start ">
-                                        <div class="subsidy-mort-count">
-                                            <p>Ставка</p>
-                                            <span>3,5%</span>
-                                        </div>
-                                        <div class="subsidy-mort-count">
-                                            <p>Платеж</p>
-                                            <span>45 567₽</span>
-                                        </div>
-                                        <div class="subsidy-mort-count">
-                                            <p>Срок</p>
-                                            <span>до 30 лет</span>
-                                        </div>
-                                    </div>
-                                    <div class="bank-card-btn G-align-center">
-                                        <div class="G-flex-column G-align-center">
-                                            <button data-modal-target="#submit-application" class="card submit-request">
-                                                Оставить заявку
-                                            </button>
-                                            <a href="#" class="fill-out-form">Заполнить анкету</a>
-                                        </div>
-                                    </div>
-                                    <span class="subsidized-rate">*-субсидированная ставка</span>
-
-                                </div>
-                                <div class="bank-card-skrit">
-                                    <div class="subsidy-mortgage G-align-center">
-                                        <img src="./assets/img/logo-sber.png" alt="logo-sber">
-                                        <div class="subsidy-mortgage-bank G-flex-column G-align-start">
-                                            <span>СберБанк</span>
-                                            <small class="subsidy-mortgage-name">Стандартная</small>
-                                        </div>
-                                    </div>
-                                    <div class="subsidy-mort-bank G-align-start ">
-                                        <div class="subsidy-mort-count">
-                                            <p>Ставка</p>
-                                            <span>3,5%</span>
-                                        </div>
-                                        <div class="subsidy-mort-count">
-                                            <p>Платеж</p>
-                                            <span>45 567₽</span>
-                                        </div>
-                                        <div class="subsidy-mort-count">
-                                            <p>Срок</p>
-                                            <span>до 30 лет</span>
-                                        </div>
-                                    </div>
-                                    <div class="bank-card-btn G-align-center">
-                                        <div class="G-flex-column G-align-center">
-                                            <button data-modal-target="#submit-application" class="card submit-request">
-                                                Оставить заявку
-                                            </button>
-                                            <a href="#" class="fill-out-form">Заполнить анкету</a>
-                                        </div>
-                                    </div>
-                                    <span class="subsidized-rate">*-субсидированная ставка</span>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="open-bank-mobile">
-                            <div class="open-bank-card">
-                                <span class="three-more-offers">еще 3 предложения</span>
-                                <span class="more-offers-hide">Скрыть </span>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-                <div class="mort-bank-mob-btn G-justify-center">
-                    <button class="btn-see-more">Показать еще</button>
-                </div>
+
             </div>
+
+
+
+
+
         </div>
 
     </div>

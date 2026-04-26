@@ -223,3 +223,262 @@ $('.icon-circle-help').on('click', function () {
     $('.subsidy-mobs').addClass('touchstart-open');
     $('body').addClass('body-fon');
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const TYPES = {
+    FAMILY: 'FAMILY',
+    STANDARD: 'STANDARD',
+    IT: 'IT',
+    SUBSIDIZED: 'SUBSIDIZED'
+};
+
+let selected = [TYPES.FAMILY, TYPES.STANDARD];
+
+const dropItems = document.querySelectorAll('.calculate-menu-drop li');
+const cards = document.querySelectorAll('.family-mortgage');
+const table = document.querySelector('.mortgage-table');
+const headCalculator = document.querySelector('.calculate-menu-click');
+
+const labels = {
+    FAMILY: 'Семейная',
+    STANDARD: 'Стандартная',
+    IT: 'IT',
+    SUBSIDIZED: 'Субсидированная'
+};
+
+
+// ========================
+// HEADER CHIPS RENDER
+// ========================
+function renderHeader() {
+    headCalculator.innerHTML = '';
+
+    const maxVisible = 2;
+    const extraCount = selected.length - maxVisible;
+
+    // первые 2 показываем нормально
+    const visible = selected.slice(0, maxVisible);
+
+    visible.forEach(type => {
+        const span = document.createElement('span');
+        span.textContent = labels[type];
+
+        const close = document.createElement('i');
+        close.className = 'close-calc-filter';
+
+        close.addEventListener('click', (e) => {
+            e.stopPropagation();
+            removeType(type);
+        });
+
+        span.appendChild(close);
+        headCalculator.appendChild(span);
+    });
+
+    // если больше 2 → добавляем +N
+    if (selected.length > maxVisible) {
+        const extra = document.createElement('span');
+        extra.className = 'calc-extra-count';
+
+        extra.textContent = `+${extraCount}`;
+
+        headCalculator.appendChild(extra);
+    }
+}
+
+
+// ========================
+// REMOVE ITEM
+// ========================
+function removeType(type) {
+    if (selected.length === 1) return;
+
+    selected = selected.filter(t => t !== type);
+
+    updateAll();
+}
+
+
+// ========================
+// DROPDOWN ACTIVE STATE
+// ========================
+function updateDropdown() {
+    dropItems.forEach(item => {
+        const type = item.dataset.type;
+
+        if (selected.includes(type)) {
+            item.classList.add('calculate-sel');
+        } else {
+            item.classList.remove('calculate-sel');
+        }
+    });
+}
+
+
+// ========================
+// VIEW LOGIC
+// ========================
+function updateView() {
+
+    // ONLY SUBSIDIZED → SHOW TABLE
+    if (selected.length === 1 && selected[0] === TYPES.SUBSIDIZED) {
+
+        table.style.display = 'block';
+
+        cards.forEach(card => {
+            card.style.display = 'none';
+        });
+
+        return;
+    }
+
+    // NORMAL MODE → SHOW CARDS
+    table.style.display = 'none';
+
+    cards.forEach(card => {
+        const type = card.dataset.type;
+
+        if (selected.includes(type)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+
+// ========================
+// CLICK HANDLER
+// ========================
+dropItems.forEach(item => {
+    item.addEventListener('click', () => {
+
+        const type = item.dataset.type;
+        const index = selected.indexOf(type);
+
+        if (index > -1) {
+            if (selected.length > 1) {
+                selected.splice(index, 1);
+            }
+        } else {
+            selected.push(type);
+        }
+
+        updateAll();
+    });
+});
+
+
+// ========================
+// MASTER UPDATE
+// ========================
+function updateAll() {
+    updateDropdown();
+    renderHeader();
+    updateView();
+}
+
+
+// INIT
+updateAll();
+
+
+
+
+
+
+
+$('.calculate-menu-click').on('click', function (e) {
+    $(this).parent().toggleClass('calculate-menu-act');
+    e.stopPropagation();
+});
+
+$('.calculate-menu-drop').on('click', function (e) {
+    e.stopPropagation();
+});
+
+$(window).on('click', function (e) {
+    let menuCalc = $('.calculate-menu');
+    if (e.target !== menuCalc) {
+        menuCalc.removeClass('calculate-menu-act');
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$('.open-bank-card').on('click', function (e) {
+    e.preventDefault();
+
+    const parent = $(this).closest('.bank-card-box'); // родитель
+    const drop = parent.find('.bank-card-drop'); // скрытый блок
+
+    // переключаем класс родителя
+    parent.toggleClass('bank-card-opened');
+
+    // плавное открытие / закрытие через max-height
+    if (parent.hasClass('bank-card-opened')) {
+        drop.stop().slideDown(300);
+    } else {
+        drop.stop().slideUp(300);
+    }
+});
+
+
+
+
