@@ -461,24 +461,3 @@ $(window).on('click', function (e) {
 
 
 
-
-$('.open-bank-card').on('click', function (e) {
-    e.preventDefault();
-
-    const parent = $(this).closest('.bank-card-box'); // родитель
-    const drop = parent.find('.bank-card-drop'); // скрытый блок
-
-    // переключаем класс родителя
-    parent.toggleClass('bank-card-opened');
-
-    // плавное открытие / закрытие через max-height
-    if (parent.hasClass('bank-card-opened')) {
-        drop.stop().slideDown(300);
-    } else {
-        drop.stop().slideUp(300);
-    }
-});
-
-
-
-

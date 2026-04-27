@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/svg" href="./assets/img/favicon.svg">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d130909a-f4b5-453d-85f2-98a45f38ba0c&lang=ru_RU"></script>
+
+    <title>Odinburg</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-main G-align-center G-justify-between">
+            <div class="header-logo G-align-center">
+                <div class="open-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="./index.html" class="logo G-flex-column G-align-start">
+                    <img src="./assets/img/logo.svg" alt="logo" loading="lazy">
+                    <span>Жилой комплекс</span>
+                </a>
+            </div>
+            <div class="header-cont-flex G-align-center">
+                <div class="header-contact G-flex-column G-align-end">
+                    <a href="tel:+ 7 (495) 489 01 39" class="phone-number">+ 7 (495) 489 01 39</a>
+                    <span data-modal-target="#modal-form" class="card request-call">Заказать звонок</span>
+                </div>
+                <div class="select-block G-align-center">
+                    <a href="./favorite.html" class="favorite-box G-center">
+                        <i class="icon heard-card"></i>
+                    </a>
+                    <a href="#" class="threed-tur G-center">
+                        3D-тур
+                    </a>
+                    <div class="select-property">
+                        <div class="select-name">Выбор недвижимости</div>
+                        <div class="select-dropdown">
+                            <ul>
+                                <li>Квартиры <i class="icon-house"></i></li>
+                                <li>Машино-места <i class="icon-car"></i></li>
+                                <li>Кладовые <i class="icon-storerooms"></i></li>
+                                <li>Мото-места <i class="icon-moto"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-modal">
+        <div class="container">
+            <div class="menu-modal-fon G-justify-between">
+                <div class="menu-modal-min">
+                    <div class="menu-modal-js" data-catalog="benefits">
+                        <div class="menu-modal-block">
+                            <h2>Преимущества проекта</h2>
+                            <div class="project-wrap">
+                                <div class="project-box">
+                                    <img src="./assets/img/project-1.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Дома уровня бизнес</span>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/project-2.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Инфраструктура</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-box">
+                                    <img src="./assets/img/project-3.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Экологически чистый район</span>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/project-4.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Для детей</span>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/project-5.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Продуманные планировки</span>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/project-6.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Кладовые и паркинг</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-modal-js" data-catalog="property">
+                        <div class="menu-modal-block">
+                            <h2>Выбор недвижимости</h2>
+                            <div class="select-menu-property">
+                                <div class="project-box">
+                                    <img src="./assets/img/property-1.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Квартиры</span>
+                                    </div>
+                                </div>
+                                <div class="menu-property-col G-flex-column">
+                                    <div class="project-box">
+                                        <img src="./assets/img/property-2.jpg" alt="project" loading="lazy">
+                                        <div class="project-name">
+                                            <span>Машино-места</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-box">
+                                        <img src="./assets/img/property-2.jpg" alt="project" loading="lazy">
+                                        <div class="project-name">
+                                            <span>Мото-места</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/property-3.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Кладовые</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-modal-js" data-catalog="purchase">
+                        <div class="menu-modal-block">
+                            <h2>ипотека</h2>
+                            <div class="mortgage-flex">
+                                <div class="mortgage-selec G-flex-wrap">
+                                    <div class="mortgage-box">
+                                        <img src="./assets/img/alfa.png" alt="alfa" loading="lazy">
+                                        <h3>Стандартная</h3>
+                                        <p>
+                                            Нужен доступный первый взнос или большая сумма кредита?
+                                        </p>
+                                        <strong>от 23,5%</strong>
+                                    </div>
+                                    <div class="mortgage-box">
+                                        <img src="./assets/img/alfa.png" alt="alfa" loading="lazy">
+                                        <h3>IT-ипотека</h3>
+                                        <p>
+                                            Доступное жилье без первоначального взноса
+                                        </p>
+                                        <strong>от 3,5%</strong>
+                                    </div>
+                                    <div class="mortgage-box">
+                                        <img src="./assets/img/alfa.png" alt="alfa" loading="lazy">
+                                        <h3>Военная</h3>
+                                        <p>
+                                            Вы военнослужащий с сертификатом НИС?
+                                        </p>
+                                        <strong>от 3,5%</strong>
+                                    </div>
+                                    <div class="mortgage-box">
+                                        <img src="./assets/img/alfa.png" alt="alfa" loading="lazy">
+                                        <h3>Семейная</h3>
+                                        <p>
+                                            Мечтаете выгодно купить квартиру с уютной детской?
+                                        </p>
+                                        <strong>от 6,5%</strong>
+                                    </div>
+                                </div>
+
+                                <div class="mortgage-calculator">
+                                    <div class="mortgage-calc-menu-title">
+                                        <h3>Ипотечный калькулятор</h3>
+                                        <div class="mortgage-calc-pirce">
+                                            <p>ежемесячный платеж</p>
+                                            <span>от 29 456 руб.</span>
+                                        </div>
+                                        <div class="mortgage-calc-pirce">
+                                            <p>первоначальный платеж</p>
+                                            <span>от 1,4 млн руб.</span>
+                                        </div>
+                                        <div class="mortgage-calc-pirce">
+                                            <p>ставка</p>
+
+                                            <span>от 3,9%</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn-line">
+                                        Рассчитать ипотеку
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-modal-js" data-catalog="stock">
+                        <div class="menu-modal-block">
+                            <h2>Акции</h2>
+                            <div class="menu-modal-stock G-flex-wrap">
+                                <div class="timer-wrapper ">
+                                    <h4>повышение цен 28.02</h4>
+                                    <div class="timer">
+                                        <div class="time-box">
+                                            <span class="days">06</span>
+                                            <small>дн.</small>
+                                        </div>
+                                        <div class="colon">:</div>
+                                        <div class="time-box">
+                                            <span class="hours">23</span>
+                                            <small>ч.</small>
+                                        </div>
+                                        <div class="colon">:</div>
+                                        <div class="time-box">
+                                            <span class="minutes">58</span>
+                                            <small>мин.</small>
+                                        </div>
+                                        <div class="colon">:</div>
+                                        <div class="time-box">
+                                            <span class="seconds">42</span>
+                                            <small>сек.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="family-mortgage-box ">
+                                    <h4>Военная ипотека</h4>
+                                </div>
+                                <div class="family-mortgage-box ">
+                                    <div class="parking-space-bit G-align-center G-justify-between">
+                                        <h4>Машино-место</h4>
+                                        <span class="parking-space-pic">от 15 000₽</span>
+                                    </div>
+                                    <p>Рассрочка на 3 года</p>
+                                </div>
+                                <div class="family-mortgage-box bg-greens">
+                                    <h4>0,11%</h4>
+                                    <p>Ипотека на первый год</p>
+                                </div>
+                                <div class="family-mortgage-box bg-greens">
+                                    <h4>Trade-in</h4>
+                                    <p>Обменяйте старое жилье на новую квартиру</p>
+                                </div>
+                                <div class="family-mortgage-box bg-green">
+                                    <h4>33%</h4>
+                                    <p>Скидки на ряд квартир</p>
+                                </div>
+                                <div class="family-mortgage-box ">
+                                    <h4>-25%</h4>
+                                    <p>На паркинг и кладовые</p>
+                                </div>
+
+                                <div class="family-mortgage-box bg-greens">
+                                    <h4>3,5%</h4>
+                                    <p>Семейная ипотека</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-modal-cnt">
+                    <div class="menu-data-menu">
+                        <ul>
+                            <li class="menu-data-click" data-catalog="benefits">Преимущества проекта
+                            </li>
+                            <li class="menu-data-click" data-catalog="property">Выбор недвижимости</li>
+                            <li class="menu-data-click" data-catalog="purchase">Способы покупки</li>
+                            <li class="menu-data-click" data-catalog="stock">Акции</li>
+                        </ul>
+                    </div>
+                    <div class="menu-data-mobile">
+                        <ul class="menu-scroll">
+                            <li><a href="#advantages-scr">Преимущества </a></li>
+                            <li><a href="#selection">Выбор недвижимости</a></li>
+                            <li><a href="#">Способы покупки</a></li>
+                            <li><a href="#">Акции</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-data-link">
+                        <ul class="menu-scroll">
+                            <li><a href="#">О компании <i class="men-icon"></i> </a></li>
+                            <li><a href="#news-sec">Новости</a></li>
+                            <li><a href="#">Ход строительства</a></li>
+                            <li><a href="#special-pool">Спец-пул</a></li>
+                            <li><a href="#general-plan">Генплан</a></li>
+                            <li><a href="#infrastructure">Инфраструктура</a></li>
+                            <li><a href="#">Кабинет брокера <i class="men-icon"></i> </a></li>
+                            <li><a href="#footer-contact">Контакты</a></li>
+                        </ul>
+
+                    </div>
+                    <button data-modal-target="#modal-form" class="card btn-line">
+                        <i class="icon icon-call"></i>
+                        <span>Заказать звонок</span>
+                    </button>
+
+
+                    <button class="btn">Выбор недвижимости</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-nav">
+        <div class="nav-menu">
+            <ul class="menu-scroll">
+                <li><a href="#special-pool">Спец-пул</a></li>
+                <li><a href="#advantages-scr">Преимущества </a></li>
+                <li><a href="#selection">Подбор</a></li>
+                <li><a href="#general-plan">Генплан</a></li>
+                <li><a href="#mortgage">Ипотека</a></li>
+                <li><a href="#infrastructure">Инфраструктура</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="select-property-mobile">
+        <div class="select-property">
+            <div class="select-name">Выбор недвижимости</div>
+            <div class="touchstart select-dropdown">
+                <div class="modal-drag-zone">
+                    <span class="close-filt-map"></span>
+                </div>
+                <ul>
+                    <li>Квартиры <i class="icon-house"></i></li>
+                    <li>Машино-места <i class="icon-car"></i></li>
+                    <li>Кладовые <i class="icon-storerooms"></i></li>
+                    <li>Мото-места <i class="icon-moto"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<section class="parts-lot">
+    <div class="container">
+
+        <div class="parking-plan-min G-align-center G-justify-between">
+            <a href="./index.html" class="back-home ">
+                <i class="back-arrow-left"></i>
+                <strong>Назад</strong>
+            </a>
+
+
+        </div>
+
+
+        <div class="parking-choice-main">
+            <div class="parking-choice">
+                Корпус 1
+            </div>
+            <div class="parking-href">
+                <ul>
+                    <li class="parking-click parking-active" data-catalog="parking-one">Корпус 1</li>
+                    <li class="parking-click" data-catalog="parking-two">Корпус 2</li>
+                    <li class="parking-click" data-catalog="parking-three">Корпус 4</li>
+                    <li class="parking-click" data-catalog="parking-four">Многоуровневый паркинг</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="parking-href-min">
+            <div class="parking-js" data-catalog="parking-one">
+                <div class="zoom-container">
+
+
+                    <div class="zoom-picture ">
+                        <span class="zoom-pic-minus G-center">-</span>
+                        <span class="zoom-pic-plus G-center">+</span>
+                    </div>
+
+
+                    <div class="parking-cards-pic">
+                        <div class="parking-photo">
+                            <img src="./assets/img/parking.png" alt="parking" loading="lazy">
+                            <svg class="svg-map parking-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1740 764"
+                                 fill="none">
+                                <path class=" bookingSvgBtn" data-type="Мото-место"
+                                      data-modal-target="#submit-request" data-num="М-01" data-status="К1"
+                                      data-square="5.3" data-price="708 742 ₽" data-old-price="944 990 ₽"
+                                      data-discount="25" d="m 149.375,203.5 h 45.25 V 230 l -45.375,0.125 z"
+                                      fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class=" bookingSvgBtn" data-type="Мото-место"
+                                      data-modal-target="#submit-request" data-num="М-05" data-status="К1"
+                                      data-square="5.3" data-price="899 990 ₽" data-old-price="0" data-discount="0"
+                                      d="m 353.19257,194.47635 h 46.0473 v 27.9223 l -45.92483,0 z" fill="#BEDC1C"
+                                      fill-opacity="0.4"></path>
+                                <path class=" bookingSvgBtn" data-type="Мото-место"
+                                      data-modal-target="#submit-request" data-num="М-08" data-status="К1"
+                                      data-square="5.3" data-price="708 742 ₽" data-old-price="944 990 ₽"
+                                      data-discount="25"
+                                      d="m 575.7814,182.19944 h 26.412 v 45.89625 l -26.16091,0.0866 z" fill="#BEDC1C"
+                                      fill-opacity="0.4"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parking-js" data-catalog="parking-two">
+                <div class="zoom-container">
+                    <div class="zoom-picture ">
+                        <span class="zoom-pic-minus G-center">-</span>
+                        <span class="zoom-pic-plus G-center">+</span>
+                    </div>
+                    <div class="parking-cards-pic">
+                        <div class="parking-photo plan-parking">
+                            <img src="./assets/img/plan-parking.png" alt="parking" loading="lazy">
+                            <svg class="svg-map parking-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2344 2232"
+                                 fill="none">
+                                <path class="card bookingSvgBtn" data-type="Мото-место"
+                                      data-modal-target="#submit-request" data-num="143" data-status="К2"
+                                      data-square="5.8" data-price="1 127 022 ₽" data-old-price="1 502 696 ₽"
+                                      data-discount="25"
+                                      d="m 1126.6123,867.12516 34.9178,-36.28712 67.4392,63.84478 -33.2061,37.48528 z"
+                                      fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Мото-место"
+                                      data-modal-target="#submit-request" data-num="141" data-status="К2"
+                                      data-square="5.9" data-price="1 127 022 ₽" data-old-price="1 502 696 ₽"
+                                      data-discount="25"
+                                      d="m 1261.8331,716.32822 54.6019,-67.95276 83.1865,66.41227 -54.6019,68.46626 z"
+                                      fill="#BEDC1C" fill-opacity="0.4"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="parking-js" data-catalog="parking-three">
+                <div class="zoom-container">
+                    <div class="zoom-picture ">
+                        <span class="zoom-pic-minus G-center">-</span>
+                        <span class="zoom-pic-plus G-center">+</span>
+                    </div>
+                    <div class="parking-cards-pic">
+                        <div class="parking-photo plan-parking">
+                            <img src="./assets/img/plan-parking-2.png" alt="parking" loading="lazy">
+                            <svg class="svg-map parking-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1672 2048" fill="none">
+                                <path class="card bookingSvgBtn" data-type="Мото-место" data-modal-target="#submit-request" data-num="901" data-status="К4" data-square="5.3" data-price="819 757 ₽" data-old-price="1 093 010 ₽" data-discount="25" d="m 1483.7006,347.72025 43.9755,-8.32393 16.4908,84.65276 -44.7608,8.32393 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Мото-место" data-modal-target="#submit-request" data-num="902" data-status="К4" data-square="5.3" data-price="819 757 ₽" data-old-price="1 093 010 ₽" data-discount="25" d="m 1216.7068,850.29693 45.2319,-4.24049 8.638,86.38037 -45.546,4.08344 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Мото-место" data-modal-target="#submit-request" data-num="903" data-status="К4" data-square="5.3" data-price="819 757 ₽" data-old-price="1 093 010 ₽" data-discount="25" d="m 666.32885,1025.258 45.08825,4.6643 -9.32861,86.4006 -44.86614,-4.4422 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="74" data-status="К4" data-square="13.3" data-price="1 638 295 ₽" data-old-price="2 184 394 ₽" data-discount="25" d="m 424.36319,1429.5166 69.1043,9.4233 -19.47485,143.2343 -68.16196,-8.4809 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="75" data-status="К4" data-square="13.3" data-price="1 638 295 ₽" data-old-price="2 184 394 ₽" data-discount="25" d="m 497.47239,1439.6466 68.86872,7.7743 -17.27608,143.8625 -68.47607,-8.1668 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="76" data-status="К4" data-square="13.3" data-price="1 723 861 ₽" data-old-price="2 298 482 ₽" data-discount="25" d="m 572.93742,1448.0491 68.47608,6.2822 -12.87853,144.8049 -69.10429,-6.5963 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parking-js" data-catalog="parking-four">
+                <div class="zoom-container">
+                    <div class="zoom-picture ">
+                        <span class="zoom-pic-minus G-center">-</span>
+                        <span class="zoom-pic-plus G-center">+</span>
+                    </div>
+                    <div class="parking-cards-pic">
+                        <div class="parking-photo plan-parking">
+                            <img src="./assets/img/plan-parking-3.png" alt="parking" loading="lazy">
+                            <svg class="svg-map parking-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3585 1275" fill="none">
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="509" data-status="МП" data-square="16.8" data-price="2 488 416 ₽" data-old-price="0" data-discount="0" d="m 106.77727,148.76996 h 81.5863 v 184.63998 h -81.5863 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="510" data-status="МП" data-square="16.2" data-price="2 379 132 ₽" data-old-price="0" data-discount="0" d="m 188.36357,148.76996 h 78.6053 v 184.63998 h -78.6053 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="511" data-status="МП" data-square="16.2" data-price="2 379 132 ₽" data-old-price="0" data-discount="0" d="m 266.96887,148.76996 h 81.1178 v 184.63998 h -81.1178 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="512" data-status="МП" data-square="16.2" data-price="2 379 132 ₽" data-old-price="0" data-discount="0" d="m 348.08667,148.76996 h 79.3232 v 184.63998 h -79.3232 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="513" data-status="МП" data-square="16.2" data-price="2 401 812 ₽" data-old-price="0" data-discount="0" d="m 229m 427.40987,148.76996 h 82.1049 v 184.63998 h -82.1049 z3.5522,34.6438 h 82.1049 v 184.63998 h -82.1049 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="518" data-status="МП" data-square="16.2" data-price="2 288 412 ₽" data-old-price="0" data-discount="0" d="m 1213.9826,148.76996 h 84.5463 v 184.63998 h -84.5463 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="519" data-status="МП" data-square="16.2" data-price="2 265 732 ₽" data-old-price="0" data-discount="0" d="m 1298.5289,148.76996 h 78.6475 v 184.63998 h -78.6475 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="520" data-status="МП" data-square="16.2" data-price="2 265 732 ₽" data-old-price="0" data-discount="0" d="m 1377.1764,148.76996 h 81.4701 v 184.63998 h -81.4701 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="521" data-status="МП" data-square="16.2" data-price="2 265 732 ₽" data-old-price="0" data-discount="0" d="m 1458.6465,148.76996 h 78.6782 v 184.63998 h -78.6782 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="522" data-status="МП" data-square="16.2" data-price="2 265 732 ₽" data-old-price="0" data-discount="0" d="m 1537.3247,148.76996 h 80.4548 v 184.63998 h -80.4548 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="523" data-status="МП" data-square="17.3" data-price="2 438 954 ₽" data-old-price="0" data-discount="0" d="m 1617.7795,148.76996 h 85.5308 v 184.63998 h -85.5308 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="524" data-status="МП" data-square="16.6" data-price="2 342 592 ₽" data-old-price="0" data-discount="0" d="m 1612.3389,524.1855 h 83.5977 v 175.46462 h -83.5977 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="526" data-status="МП" data-square="15.5" data-price="2 170 000 ₽" data-old-price="0" data-discount="0" d="m 1453.2993,524.1855 h 79.7463 v 175.46462 h -79.7463 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="531" data-status="МП" data-square="15" data-price="2 165 100 ₽" data-old-price="0" data-discount="0" d="m 864.40777,617.4637 h 163.84813 v 82.18642 H 864.40777 Z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="533" data-status="МП" data-square="15" data-price="2 165 100 ₽" data-old-price="0" data-discount="0" d="m 702.88737,617.4637 h 161.5204 v 82.18642 h -161.5204 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="534" data-status="МП" data-square="15.5" data-price="2 300 200 ₽" data-old-price="0" data-discount="0" d="m 427.40987,526.79245 h 82.1049 v 172.85767 h -82.1049 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="535" data-status="МП" data-square="15.5" data-price="2 278 500 ₽" data-old-price="0" data-discount="0" d="m 348.08667,526.79245 h 79.3232 v 172.85767 h -79.3232 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="536" data-status="МП" data-square="15.5" data-price="2 278 500 ₽" data-old-price="0" data-discount="0" d="m 266.96887,526.79245 h 81.1178 v 172.85767 h -81.1178 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="537" data-status="МП" data-square="15.5" data-price="2 278 500 ₽" data-old-price="0" data-discount="0" d="m 188.36357,526.79245 h 78.6053 v 172.85767 h -78.6053 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="538" data-status="МП" data-square="15.5" data-price="2 278 500 ₽" data-old-price="0" data-discount="0" d="m 106.77727,526.79245 h 81.5863 v 172.85767 h -81.5863 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="539" data-status="МП" data-square="15.5" data-price="2 300 200 ₽" data-old-price="0" data-discount="0" d="M 27.833371,526.79245 H 106.77727 V 699.65012 H 27.833371 Z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="540" data-status="МП" data-square="15.5" data-price="2 256 800 ₽" data-old-price="0" data-discount="0" d="M 27.833371,699.65012 H 106.77727 V 870.89463 H 27.833371 Z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="541" data-status="МП" data-square="15.5" data-price="2 235 100 ₽" data-old-price="0" data-discount="0" d="m 106.77727,699.65012 h 81.5863 v 171.24451 h -81.5863 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="542" data-status="МП" data-square="15.5" data-price="2 235 100 ₽" data-old-price="0" data-discount="0" d="m 188.36357,699.65012 h 78.6053 v 171.24451 h -78.6053 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="543" data-status="МП" data-square="15.5" data-price="2 235 100 ₽" data-old-price="0" data-discount="0" d="m 266.96887,699.65012 h 81.1178 v 171.24451 h -81.1178 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="544" data-status="МП" data-square="15.5" data-price="2 235 100 ₽" data-old-price="0" data-discount="0" d="m 348.08667,699.65012 h 79.3232 v 171.24451 h -79.3232 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="545" data-status="МП" data-square="15.5" data-price="2 256 800 ₽" data-old-price="0" data-discount="0" d="m 427.40987,699.65012 h 82.1049 v 171.24451 h -82.1049 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="546" data-status="МП" data-square="15" data-price="2 165 100 ₽" data-old-price="0" data-discount="0" d="m 702.88737,699.65012 h 161.5204 v 84.41798 h -161.5204 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="548" data-status="МП" data-square="15" data-price="2 165 100 ₽" data-old-price="0" data-discount="0" d="M 864.40777,699.65012 H 1028.2559 V 784.0681 H 864.40777 Z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="552" data-status="МП" data-square="15.5" data-price="2 202 550 ₽" data-old-price="0" data-discount="0" d="m 1372.4202,699.65012 h 80.8791 v 175.69117 h -80.8791 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="554" data-status="МП" data-square="15.5" data-price="2 202 550 ₽" data-old-price="0" data-discount="0" d="m 1533.0456,699.65012 h 79.2933 v 175.69117 h -79.2933 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="555" data-status="МП" data-square="16.6" data-price="2 377 452 ₽" data-old-price="0" data-discount="0" d="m 1612.3389,699.65012 h 83.5977 v 175.69117 h -83.5977 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="556" data-status="МП" data-square="16.2" data-price="2 322 432 ₽" data-old-price="0" data-discount="0" d="m 1533.0456,1068.2567 h 79.2933 v 183.9056 h -79.2933 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="557" data-status="МП" data-square="16.2" data-price="2 299 752 ₽" data-old-price="0" data-discount="0" d="m 1453.2993,1068.2567 h 79.7463 v 183.9056 h -79.7463 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="558" data-status="МП" data-square="16.2" data-price="2 299 752 ₽" data-old-price="0" data-discount="0" d="m 1372.4202,1068.2567 h 80.8791 v 183.9056 h -80.8791 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="559" data-status="МП" data-square="16.2" data-price="2 299 752 ₽" data-old-price="0" data-discount="0" d="m 1293.127,1068.2567 h 79.2932 v 183.9056 h -79.2932 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="560" data-status="МП" data-square="16.2" data-price="2 322 432 ₽" data-old-price="0" data-discount="0" d="m 1212.2478,1068.2567 h 80.8792 v 183.9056 h -80.8792 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="561" data-status="МП" data-square="14.2" data-price="2 013 844 ₽" data-old-price="0" data-discount="0" d="m 702.88737,1079.1501 h 155.5931 v 81.8734 h -155.5931 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="562" data-status="МП" data-square="17.7" data-price="2 492 868 ₽" data-old-price="0" data-discount="0" d="m 702.88737,1161.0235 h 155.5931 v 96.2846 h -155.5931 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="563" data-status="МП" data-square="16.2" data-price="2 288 412 ₽" data-old-price="0" data-discount="0" d="m 427.40987,1068.2567 h 82.1049 v 183.9056 c 0,0 -82.1049,0 -82.1049,0 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="564" data-status="МП" data-square="16.2" data-price="2 265 732 ₽" data-old-price="0" data-discount="0" d="m 348.08667,1068.2567 h 79.3232 v 183.9056 h -79.3232 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="565" data-status="МП" data-square="16.2" data-price="2 265 732 ₽" data-old-price="0" data-discount="0" d="m 266.96887,1068.2567 h 81.1178 v 183.9056 h -81.1178 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="566" data-status="МП" data-square="16.2" data-price="2 265 732 ₽" data-old-price="0" data-discount="0" d="m 188.36357,1068.2567 h 78.6053 v 183.9056 h -78.6053 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="567" data-status="МП" data-square="16.2" data-price="2 265 732 ₽" data-old-price="0" data-discount="0" d="m 106.77727,1068.2567 h 81.5863 v 183.9056 h -81.5863 z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="568" data-status="МП" data-square="16.2" data-price="2 288 412 ₽" data-old-price="0" data-discount="0" d="m 27.833371,1068.2567 h 78.943899 v 183.9056 H 27.833371 Z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="517" data-status="МП" data-square="14.4" data-price="2 142 000 ₽" data-old-price="0" data-discount="0" d="m 871.31457,235.62336 h 156.94133 v 76.21353 H 871.31457 Z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                                <path class="card bookingSvgBtn" data-type="Машино-место" data-modal-target="#submit-request" data-num="530" data-status="МП" data-square="13.4" data-price="1 958 544 ₽" data-old-price="0" data-discount="0" d="M 864.40777,526.79245 H 1028.2559 V 617.4637 H 864.40777 Z" fill="#BEDC1C" fill-opacity="0.4"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="info-block" class="parking-results-info">
+            <div class="parking-space-num G-align-center">
+                <p>Машиноместо № </p><span class="value-num">148</span>
+            </div>
+            <div class="parking-results-count G-align-center G-justify-between">
+                <div class="G-align-center">
+                    <p>Площадь</p>
+                    <span class="G-align-center"><span class="value-square">27</span><b>м²</b></span>
+                </div>
+                <div class="G-align-center">
+                    <span class="value-status">4</span>
+                    <p>корпус</p>
+                </div>
+            </div>
+            <div class="value-price-marg G-justify-between G-align-end">
+                <div class="value-price-result G-flex-column G-align-start">
+                    <del>9 000 000 ₽</del>
+                    <span class="value-price">3 328 990 ₽</span>
+                </div>
+                <span class="discount-count">−20%</span>
+            </div>
+        </div>
+
+        <div class="parking-pagination">
+            <ul>
+                <li class="parking-pag-active">-1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+
+            <div class="koxmnacuyc-fl G-flex">
+                <img src="./assets/img/koxmnacuyc.svg" alt="koxmnacuyc">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<script src="assets/js/jquery-3.6.4.js"></script>
+<script src="assets/js/jquery.fancybox.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/jquery.formstyler.min.js"></script>
+<script src="https://snipp.ru/cdn/maskedinput/jquery.maskedinput.min.js"></script>
+<script src="assets/js/sliders.js"></script>
+<script src="assets/js/nouislider.min.js"></script>
+<script src="assets/js/data-catalog.js"></script>
+<script src="assets/js/modal.js"></script>
+<script src="assets/js/data-search.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/parking.js"></script>
+<script src="assets/js/select.js"></script>
+
+
+
+<script>
+    const infoBlock = document.querySelector('#info-block');
+    let hoverTimeout = null;
+
+    document.querySelectorAll('.svg-map').forEach(svg => {
+
+        svg.addEventListener('mouseover', (e) => {
+            const path = e.target.closest('rect, path');
+
+            if (!path) return;
+
+            // Получаем данные
+            const num = path.getAttribute('data-num') || '-';
+            const square = path.getAttribute('data-square') || '-';
+            const price = path.getAttribute('data-price') || '-';
+            const status = path.getAttribute('data-status') || '-';
+
+            // Вставляем в единое окно
+            infoBlock.querySelector('.value-num').textContent = num;
+            infoBlock.querySelector('.value-square').textContent = square;
+            infoBlock.querySelector('.value-price').textContent = price;
+            infoBlock.querySelector('.value-status').textContent = status;
+
+            // Координаты
+            const rect = path.getBoundingClientRect();
+            const scrollTop = window.scrollY;
+            const scrollLeft = window.scrollX;
+
+            infoBlock.style.left = (rect.right + scrollLeft - 125) + 'px';
+            infoBlock.style.top = (rect.top + scrollTop - 250) + 'px';
+            infoBlock.style.display = 'block';
+        });
+
+        svg.addEventListener('mouseout', (e) => {
+            if (!e.relatedTarget ||
+                (!svg.contains(e.relatedTarget) && !infoBlock.contains(e.relatedTarget))) {
+
+                hoverTimeout = setTimeout(() => {
+                    infoBlock.style.display = 'none';
+                }, 200);
+            }
+        });
+
+    });
+
+    // Не скрывать, пока мышка в окне
+    infoBlock.addEventListener('mouseover', () => {
+        clearTimeout(hoverTimeout);
+    });
+
+    // Скрыть, когда ушли из окна
+    infoBlock.addEventListener('mouseout', (e) => {
+        if (!e.relatedTarget ||
+            (!infoBlock.contains(e.relatedTarget) && !document.querySelector('.svg-map').contains(e.relatedTarget))) {
+
+            hoverTimeout = setTimeout(() => {
+                infoBlock.style.display = 'none';
+            }, 200);
+        }
+    });
+</script>
+
+</body>
+</html>
+
+

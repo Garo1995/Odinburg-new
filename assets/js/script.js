@@ -106,6 +106,9 @@ $('.open-bank-card').on('click', function (e) {
     }
 });
 
+
+
+
 $('.modal-options-href').on('click', function (e) {
     e.preventDefault();
 
@@ -240,19 +243,20 @@ $('.select-filter-name').on('click', function () {
 
 
 
-
 document.addEventListener("DOMContentLoaded", () => {
     const cookieBlock = document.querySelector(".cookie");
     const acceptBtn = document.querySelector(".cookie__btn");
 
-    // Показываем баннер, если не было принятия
-    if (!localStorage.getItem("cookieAccepted")) {
+    if (!cookieBlock || !acceptBtn) return;
+
+    const isAccepted = localStorage.getItem("cookieAccepted");
+
+    if (!isAccepted) {
         cookieBlock.style.display = "flex";
     } else {
         cookieBlock.style.display = "none";
     }
 
-    // При нажатии — скрываем и сохраняем в localStorage
     acceptBtn.addEventListener("click", () => {
         localStorage.setItem("cookieAccepted", "true");
         cookieBlock.style.display = "none";
@@ -421,16 +425,15 @@ $('.close-catalog').on('click', function () {
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
     const widget = document.querySelector('.floating-widget');
+    if (!widget) return;
 
-    widget.addEventListener('mouseenter', function () {
-        widget.classList.add('open');
-    });
+    const open = () => widget.classList.add('open');
+    const close = () => widget.classList.remove('open');
 
-    widget.addEventListener('mouseleave', function () {
-        widget.classList.remove('open');
-    });
+    widget.addEventListener('mouseenter', open);
+    widget.addEventListener('mouseleave', close);
 });
 
 
@@ -494,9 +497,6 @@ document.querySelectorAll('.validate-form').forEach(form => {
 
 
 
-
-
-
 $('.real-estate-click').on('click', function () {
 
     // active класс
@@ -524,15 +524,6 @@ $('.real-estate-click').on('click', function () {
 
 
 
-
-
-
-
-
-
-
-
-
 $('.construct-years-mobile').on('click', function () {
     $('.construct-years').addClass('construct-years-open');
 })
@@ -547,4 +538,59 @@ $('.open-year').on('click', function () {
 
     $('.construct-years-mobile').html(selected_text);
 
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$('.parking-choice').on('click', function () {
+    $('.parking-choice-main').addClass('parking-choice-open');
+})
+
+
+$('.parking-click').on('click', function () {
+    $('.parking-click').removeClass('parking-active');
+    $(this).addClass('parking-active');
+    $('.parking-choice-main').removeClass('parking-choice-open');
+
+    let selectedPrk = $(this).html();
+
+    $('.parking-choice').html(selectedPrk);
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+$('.zoomPlanContol').on('click', function () {
+    $('.fullPictureWrap').addClass('fullPictureWrap-open');
+})
+
+
+
+$('.zoomPlanContolClose').on('click', function () {
+    $('.fullPictureWrap').removeClass('fullPictureWrap-open');
 })

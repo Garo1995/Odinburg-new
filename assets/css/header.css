@@ -98,7 +98,7 @@ header {
 }
 
 .favorite-box:hover i {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(244, 241, 236, 1);
 }
 
 .threed-tur {
@@ -110,6 +110,7 @@ header {
     border: 1px solid rgba(11, 58, 42, 1);
     background: rgba(244, 241, 236, 1);
     padding: 0.9375rem 1.5rem; /* 15px 24px */
+    transition: 0.3s;
 }
 
 .threed-tur:hover {
@@ -140,10 +141,18 @@ header {
     transition: 0.3s;
     display: flex;
     align-items: center;
+    border: 1px solid transparent;
 }
 
-.select-name:hover {}
-
+.select-name:hover {
+    border: 1px solid  rgba(11, 58, 42, 1);
+    background: rgba(244, 241, 236, 1);
+    color: rgba(11, 58, 42, 1);
+}
+.select-name:hover:after{
+    border-top: 0.125rem solid rgba(11, 58, 42, 1);
+    border-right: 0.125rem solid rgba(11, 58, 42, 1);
+}
 .select-name:after {
     content: '';
     position: absolute;
@@ -154,6 +163,7 @@ header {
     border-top: 0.125rem solid rgba(244, 241, 236, 1); /* 2px */
     border-right: 0.125rem solid rgba(244, 241, 236, 1); /* 2px */
     transform: rotate(45deg);
+    transition: 0.3s;
 }
 
 .select-name i {
@@ -270,7 +280,6 @@ header {
 
 .menu-data-menu ul li:hover {
     background: rgba(11, 58, 42, 0.1);
-    color: rgba(11, 58, 42, 1);
 }
 
 .menu-data-link ul li a {
@@ -286,7 +295,7 @@ header {
 }
 
 .menu-data-link ul li a:hover {
-    color: rgba(11, 58, 42, 1);
+    background: rgba(11, 58, 42, 0.1);
 }
 
 .btn-line {
@@ -307,10 +316,14 @@ header {
     vertical-align: middle;
     gap: 0.625rem; /* 10px */
     transition: 0.3s;
+    white-space: nowrap;
 }
 
-/*.btn-line:hover{*/
-/*}*/
+.btn-line:hover{
+    background: rgba(11, 58, 42, 1);
+    color: rgba(244, 241, 236, 1);
+}
+
 .btn-line:hover i {
     background-color: rgba(244, 241, 236, 1);
 }
