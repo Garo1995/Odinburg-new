@@ -2983,7 +2983,42 @@ input[type=range]::-moz-range-thumb {
     width: 100%;
     transition: 0.3s;
     position: relative;
+
 }
+
+.zoom-gallery {
+    position: absolute;
+    background: rgba(11, 58, 42, 1);
+    width: 3.25rem; /* 52px */
+    height: 3.25rem; /* 52px */
+    gap: 0.625rem; /* 10px */
+    padding: 0.875rem; /* 14px */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.options-gallery-pic:hover .zoom-gallery {
+    opacity: 1;
+}
+
+.zoom-gallery:before {
+    content: "";
+    position: absolute;
+    background: rgba(11, 58, 42, 0.1);
+    width: 4.25rem; /* 68px */
+    height: 4.25rem; /* 68px */
+    border-radius: 50%;
+}
+
+
 .options-gallery-pic img {
     border-radius: 1.5rem;
     width: 100%;

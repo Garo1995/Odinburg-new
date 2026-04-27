@@ -235,7 +235,6 @@ let optionsSwiper = new Swiper(".finish-options-slider", {
 let optionsGallerySwiper = new Swiper(".options-gallery-slide", {
     slidesPerView: 1,
     spaceBetween: 24,
-    loop: true,
     navigation: {
         nextEl: ".options-button-next",
         prevEl: ".options-button-prev",
