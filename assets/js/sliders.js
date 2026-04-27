@@ -247,7 +247,6 @@ let optionsGallerySwiper = new Swiper(".options-gallery-slide", {
 let constructionSwiper = new Swiper(".construction-slider", {
     slidesPerView: 4,
     spaceBetween: 16,
-    loop: true,
     breakpoints: {
         '1199': {
             slidesPerView: 4,

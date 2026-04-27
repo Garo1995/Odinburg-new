@@ -551,7 +551,7 @@ body.modal-open {
     transition: 0.3s;
 }
 
-.check-form label small:hover a {
+.check-form label small a:hover {
     text-decoration: unset;
 }
 

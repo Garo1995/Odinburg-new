@@ -529,11 +529,13 @@ p{
     padding: 1.5rem 1rem 1rem;
     transition: 0.3s;
     position: relative;
-    border: 0.125rem solid rgba(203, 184, 169, 1);
+    border: 0.125rem solid transparent;
     max-width: 20.125rem;
     width: 100%;
 }
-
+.apartments-card:hover{
+    border: 0.125rem solid rgba(203, 184, 169, 1);
+}
 .apartments-photo{
     position: relative;
     width: 100%;
@@ -1646,14 +1648,17 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     display: flex;
     overflow: hidden;
 }
+.family-filters-box:hover{
+    border: 2px solid rgba(203, 184, 169, 1);
+
+}
 .family-filters-box img {
     width: 100%;
-    border-radius: 1.5rem;
+    border-radius: 1.2rem;
 }
 .family-filters-wrap .apartments-card {
     width: calc(25% - 0.75rem);
     max-width: max-content;
-    border: unset;
     background: rgba(255, 255, 255, 1);
 }
 
